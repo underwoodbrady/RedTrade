@@ -1,5 +1,5 @@
 <section class="drop-shadow-md">
-	<div class="relative w-full flex py-2 bg-rose-400 justify-center text-neutral-800">
+	<div class="relative w-full flex py-2 bg-brand justify-center text-neutral-800">
 		<p class="">
 			🥳 Red Trade is now live to try for FREE. <span class="underline cursor-pointer">Sign Up Now!</span> 🥳
 		</p>
@@ -17,17 +17,17 @@
 		</nav>
 		<div class="flex items-center space-x-4">
 			<div class="flex items-center space-x-4 mr-4">
-                <div class="border border-neutral-500 rounded-full bg-neutral-600 w-7 h-7 flex items-center justify-center">
+                <div class="border border-neutral-500 rounded-full bg-neutral-600 w-7 h-7 flex items-center justify-center drop-shadow-sm">
 					<img src="/discord.svg" alt="discord" class="w-4/6"/>
                 </div>
-                <div class="border border-neutral-500 rounded-full bg-neutral-600 w-7 h-7 flex items-center justify-center">
+                <div class="border border-neutral-500 rounded-full bg-neutral-600 w-7 h-7 flex items-center justify-center drop-shadow-sm">
 					<img src="/instagram.svg" alt="instagram" class="w-5/12"/>
                 </div>
             </div>
-			<button class="px-4 py-1 text-white border-rose-400 border font-semibold rounded-md"
+			<button class="px-4 py-1 text-white border-white border font-semibold rounded-md drop-shadow-sm"
 				>Login</button
 			>
-			<button class="px-4 py-1 text-neutral-800 bg-rose-400 font-semibold rounded-md">Sign Up</button>
+			<button class="px-4 py-1 text-neutral-800 bg-brand font-semibold rounded-md drop-shadow-sm">Sign Up</button>
 		</div>
 	</header>
 </section>
