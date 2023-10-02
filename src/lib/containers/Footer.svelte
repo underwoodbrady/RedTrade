@@ -1,14 +1,14 @@
 <footer class="relative bg-neutral-800 h-96 w-full flex px-28 py-28 items-center justify-between">
 	<div class="flex flex-col justify-between h-full">
-		<h1 class="text-4xl text-white font-semibold cursor-pointer">
+		<h1 class="text-4xl text-white font-bold cursor-pointer">
 			<span class="text-rose-500">Red</span> Trade
 		</h1>
 		<div class="flex flex-col space-y-4">
-			<button class="px-4 py-2 text-neutral-800 bg-rose-400 font-semibold rounded-md w-64 text-left"
-				>Try Red Trade For Free
+			<button class="px-4 py-2 text-neutral-800 bg-rose-400 font-semibold rounded-md w-64 text-left flex items-center justify-between"
+				>Try Red Trade For Free <img src="/arrow-right-bg.svg" alt="arrow-right" class="h-3">
 			</button>
-			<button class="px-4 py-2 text-white border-white border font-semibold rounded-md text-left"
-				>Follow us on X
+			<button class="px-4 py-2 text-white border-white border font-semibold rounded-md text-left flex items-center justify-between"
+				>Follow us on X <img src="/arrow-right-white.svg" alt="arrow-right" class="h-5">
 			</button>
 		</div>
 	</div>
