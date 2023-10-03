@@ -4,11 +4,11 @@
 			<span class="text-brand">Red</span> Trade
 		</h1>
 		<div class="flex flex-col space-y-4">
-			<button class="px-4 py-2 text-neutral-800 bg-brand font-semibold rounded-md w-64 text-left flex items-center justify-between"
+			<button class="px-4 py-2 text-neutral-800 bg-brand font-semibold rounded-md w-64 text-left flex items-center justify-between drop-shadow-md"
 				>Try Red Trade For Free <img src="/arrow-right-bg.svg" alt="arrow-right" class="h-3">
 			</button>
-			<button class="px-4 py-2 text-white border-white border font-semibold rounded-md text-left flex items-center justify-between"
-				>Follow us on X <img src="/arrow-right-white.svg" alt="arrow-right" class="h-5">
+			<button class="px-4 py-2 text-white border-white border font-semibold rounded-md text-left flex items-center justify-between drop-shadow-md"
+				>Follow us on Instagram <img src="/arrow-right-white.svg" alt="arrow-right" class="h-5">
 			</button>
 		</div>
 	</div>

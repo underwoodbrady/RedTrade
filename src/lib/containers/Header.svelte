@@ -1,7 +1,7 @@
 <section class="drop-shadow-md">
 	<div class="relative w-full flex py-2 bg-brand justify-center text-neutral-800">
 		<p class="">
-			🥳 Red Trade is now live to try for FREE. <span class="underline cursor-pointer">Sign Up Now!</span> 🥳
+			📈 Red Trade is now live to try for FREE. <span class="underline cursor-pointer">Sign Up Now!</span> 📈
 		</p>
 		<span class="font-bold absolute right-12 top-3 font cursor-pointer"><img src="/close-x.svg" alt="close banner" class="w-4"></span>
 	</div>
@@ -17,10 +17,10 @@
 		</nav>
 		<div class="flex items-center space-x-4">
 			<div class="flex items-center space-x-4 mr-4">
-                <div class="border border-neutral-500 rounded-full bg-neutral-600 w-7 h-7 flex items-center justify-center drop-shadow-sm">
+                <div class="border border-neutral-600 rounded-full bg-neutral-700 w-8 h-8 flex items-center justify-center drop-shadow-sm">
 					<img src="/discord.svg" alt="discord" class="w-4/6"/>
                 </div>
-                <div class="border border-neutral-500 rounded-full bg-neutral-600 w-7 h-7 flex items-center justify-center drop-shadow-sm">
+                <div class="border border-neutral-600 rounded-full bg-neutral-700 w-8 h-8 flex items-center justify-center drop-shadow-sm">
 					<img src="/instagram.svg" alt="instagram" class="w-5/12"/>
                 </div>
             </div>
