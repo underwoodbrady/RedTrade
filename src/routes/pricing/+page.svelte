@@ -7,14 +7,14 @@
 		<div class="backgroundgrad w-full h-full" />
 	</div>
 	<h3 class="text-complementary font-semibold text-2xl mb-4 uppercase">Pricing</h3>
-	<h3 class="text-white font-semibold text-5xl mb-24">Choose an Plan</h3>
+	<h3 class="text-white font-semibold text-5xl mb-24">Choose your Plan</h3>
 	<div class="flex flex-col items-center space-y-6">
 		<div class="flex space-x-8 items-center">
 			<PriceCard title="Free" price={0} features = {['Custom Layouts', '3 Dashboards', 'Learning Platform', 'Standard Support']} actionText="Sign Up" />
             <div class="glow border border-brand">
                 <PriceCard title="Plus" price={6} cents="99" features = {['No Ads','10 Dashboards', 'Custom AI and Modules', 'Extended Support']} checks discount discountAmount = {2} />
             </div>
-            <PriceCard title="Pro" price={12} cents="99" features = {['Everything Previous','Unlimited Dashboards', 'Advanced Trading', '24/7 Support']} checks infinity={[1,3]} />
+            <PriceCard title="Pro" price={9} cents="99" features = {['Everything Previous','Unlimited Dashboards', 'Advanced Trading', '24/7 Support']} checks infinity={[1,3]} />
 		</div>
 	</div>
 </main>

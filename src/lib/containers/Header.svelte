@@ -1,7 +1,7 @@
 <section class="drop-shadow-md">
 	<div class="relative w-full flex py-2 bg-brand justify-center text-neutral-800">
 		<p class="">
-			📈 Red Trade is now live to try for FREE. <span class="underline cursor-pointer">Sign Up Now!</span> 📈
+			📈 Red Trade BETA is now live for testing. <span class="underline cursor-pointer">Sign Up Now!</span> 📈
 		</p>
 		<span class="font-bold absolute right-12 top-3 font cursor-pointer"><img src="/close-x.svg" alt="close banner" class="w-4"></span>
 	</div>

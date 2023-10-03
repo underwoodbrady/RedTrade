@@ -12,7 +12,7 @@
 			>
 		</div>
 		<div>
-			<div class="w-96 h-96 bg-[#303030] glow flex items-center justify-center text-white">
+			<div class="w-96 h-96 bg-[#303030]/80 glow flex items-center justify-center text-white">
 				<p>Demo here</p>
 			</div>
 		</div>
