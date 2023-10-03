@@ -6,6 +6,7 @@ export default {
       colors:{
         brand: '#eb3d3d', 
         complementary: '#EE8585',
+        darker: '#6B3C3C',
       },
     },
   },
