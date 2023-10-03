@@ -8,7 +8,7 @@
 				>Try Red Trade For Free <img src="/arrow-right-bg.svg" alt="arrow-right" class="h-3">
 			</button>
 			<button class="px-4 py-2 text-white border-white border font-semibold rounded-md text-left flex items-center justify-between drop-shadow-md"
-				>Follow us on Instagram <img src="/arrow-right-white.svg" alt="arrow-right" class="h-5">
+				>Follow us on Instagram <img src="/instagram.svg" alt="arrow-right" class="h-3">
 			</button>
 		</div>
 	</div>
@@ -25,7 +25,7 @@
         <ul class="text-white space-y-2 text-sm flex-1 flex flex-col justify-between">
             <li>What is Red Trade?</li>
             <li>How is money mangaged?</li>
-            <li>Is it really faster?</li>
+            <li>How is it faster?</li>
         </ul>
     </div>
     <div class="flex flex-col justify-between h-full">

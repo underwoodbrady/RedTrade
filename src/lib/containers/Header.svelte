@@ -7,12 +7,12 @@
 	</div>
 	<header class="flex bg-neutral-800 h-20 items-center px-12 justify-between">
 		<nav class="flex space-x-16 items-center">
-			<img src="/temp-logo.svg" alt="Red Trade Logo" class="h-10">
+			<a href="/"><img src="/temp-logo.svg" alt="Red Trade Logo" class="h-10"></a>
 			<ul class="flex text-white space-x-6 items-center font-semibold">
-				<li class="hover:text-neutral-300 cursor-pointer flex items-center"><a href="/services"> Services</a> <img src="/arrow-down.svg" alt="down arrow" class="h-3 ml-2 mt-[2px]"></li>
-				<li class="hover:text-neutral-300 cursor-pointer">Pricing</li>
-				<li class="hover:text-neutral-300 cursor-pointer">FAQ</li>
-				<li class="hover:text-neutral-300 cursor-pointer">Company</li>
+				<li class="hover:text-neutral-300 cursor-pointer flex items-center"><a href="/services">Services</a> <img src="/arrow-down.svg" alt="down arrow" class="h-3 ml-2 mt-[2px]"></li>
+				<li class="hover:text-neutral-300 cursor-pointer"><a href="/pricing">Pricing</a></li>
+				<li class="hover:text-neutral-300 cursor-pointer"><a href="/FAQ">FAQ</a></li>
+				<li class="hover:text-neutral-300 cursor-pointer"><a href="/company">Company</a></li>
 			</ul>
 		</nav>
 		<div class="flex items-center space-x-4">

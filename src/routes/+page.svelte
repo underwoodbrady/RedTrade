@@ -1,6 +1,7 @@
 <script>
-    import Hero from '$lib/containers/Hero.svelte';
-
+	import Hero from '$lib/containers/Hero.svelte';
 </script>
 
-<Hero/>
+<main>
+	<Hero />
+</main>

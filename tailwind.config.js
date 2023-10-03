@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors:{
-        brand: '#eb3d3d', //Main Background Color
+        brand: '#eb3d3d', 
+        complementary: '#EE8585',
       },
     },
   },
