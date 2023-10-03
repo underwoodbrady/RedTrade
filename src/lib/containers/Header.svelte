@@ -9,7 +9,7 @@
 		<nav class="flex space-x-16 items-center">
 			<img src="/temp-logo.svg" alt="Red Trade Logo" class="h-10">
 			<ul class="flex text-white space-x-6 items-center font-semibold">
-				<li class="hover:text-neutral-300 cursor-pointer flex items-center">Services <img src="/arrow-down.svg" alt="down arrow" class="h-3 ml-2 mt-[2px]"></li>
+				<li class="hover:text-neutral-300 cursor-pointer flex items-center"><a href="/services"> Services</a> <img src="/arrow-down.svg" alt="down arrow" class="h-3 ml-2 mt-[2px]"></li>
 				<li class="hover:text-neutral-300 cursor-pointer">Pricing</li>
 				<li class="hover:text-neutral-300 cursor-pointer">FAQ</li>
 				<li class="hover:text-neutral-300 cursor-pointer">Company</li>
