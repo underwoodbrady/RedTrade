@@ -21,8 +21,8 @@
 					<div class="flex justify-between items-center">
 						<h3 class="font-semibold text-neutral-400">Founder, CEO</h3>
 						<div class="flex items-center space-x-1">
-							<p class="font-semibold text-neutral-500">Seattle, WA</p>
-							<img src="/location.svg" alt="location icon" class="w-3" />
+							<p class="font-semibold text-neutral-500 text-sm">Seattle, WA</p>
+							<img src="/location.svg" alt="location icon" class="h-3" />
 						</div>
 					</div>
 					<h3 class="text-3xl text-white font-semibold">Brady Underwood</h3>

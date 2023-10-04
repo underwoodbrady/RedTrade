@@ -6,7 +6,7 @@
 	<div class="absolute left-0 right-0 top-0 bottom-0 backgroundimg opacity-[0.1]">
 		<div class="backgroundgrad w-full h-full" />
 	</div>
-	<h3 class="text-complementary font-semibold text-2xl mb-4 uppercase">Pricing</h3>
+	<h3 class="text-complementary font-semibold text-xl mb-4 uppercase">Pricing</h3>
 	<h3 class="text-white font-semibold text-5xl mb-24">Choose your Plan</h3>
 	<div class="flex flex-col items-center space-y-6">
 		<div class="flex space-x-8 items-center">

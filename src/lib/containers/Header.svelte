@@ -33,11 +33,20 @@
 				>
 					<a href="/services">Services</a>
 					<img src="/arrow-down.svg" alt="down arrow" class="h-3 ml-2 mt-[2px]" />
-					<div class="absolute top-14 left-0 rounded-md bg-neutral-800 border border-neutral-600 p-2 scale-0 group-hover:scale-100 transition-all origin-top font-normal text-neutral-300 flex flex-col">
+					<div class="absolute top-14 left-0 rounded-md bg-neutral-800 border border-neutral-600 p-2 scale-0 group-hover:scale-100 transition-all origin-top font-normal text-neutral-400 flex flex-col w-[166px]">
 						<span class="absolute left-0 -top-4 h-4 w-full"/>
-						<p class="py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md">Dashboard</p>
-						<p class="py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md">Learning</p>
-						<p class="py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md">Automation</p>
+						<div class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">
+							<img src="./dashboard.svg" alt="Dashboard" class="h-6"/>
+							<p class="font-semibold">Dashboard</p>
+						</div>
+						<div class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">
+							<img src="./graduate-cap.svg" alt="Graduate" class="h-6"/>
+							<p class="font-semibold">Learning</p>
+						</div>
+						<div class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">
+							<img src="./robot.svg" alt="Automation" class="h-5"/>
+							<p class="font-semibold">Automation</p>
+						</div>
 					</div>
 				</li>
 				<li class="hover:text-neutral-300 py-2 px-3 cursor-pointer">
