@@ -35,6 +35,9 @@
 				<img src="/CharlesSchwab.svg" alt= "Charles Schwab" class="h-16"/>
 			</div>
 			<div class="relative">
+				<img src="/CapitalOne.svg" alt= "Capital One" class="h-8 mx-8"/>
+			</div>
+			<div class="relative">
 				<img src="/Fidelity.svg" alt= "Fidelity" class="h-8 mx-8"/>
 				<p class="font-bold absolute text-neutral-400 right-2 -top-2">*</p>
 			</div>
