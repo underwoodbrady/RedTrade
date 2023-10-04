@@ -33,18 +33,20 @@
 				>
 					<p>Services</p>
 					<img src="/arrow-down.svg" alt="down arrow" class="h-3 ml-2 mt-[2px]" />
-					<div class="absolute top-14 left-0 rounded-md bg-neutral-800 border border-neutral-600 p-2 scale-0 group-hover:scale-100 transition-all origin-top font-normal text-neutral-400 flex flex-col w-[166px]">
-						<span class="absolute left-0 -top-4 h-4 w-full"/>
+					<div
+						class="absolute top-14 left-0 rounded-md bg-neutral-800 border border-neutral-600 p-2 scale-0 group-hover:scale-100 transition-all origin-top font-normal text-neutral-400 flex flex-col w-[166px]"
+					>
+						<span class="absolute left-0 -top-4 h-4 w-full" />
 						<div class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">
-							<img src="./dashboard.svg" alt="Dashboard" class="h-6"/>
+							<img src="./dashboard.svg" alt="Dashboard" class="h-6" />
 							<a href="/services/dashboard" class="font-semibold">Dashboard</a>
 						</div>
 						<div class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">
-							<img src="./graduate-cap.svg" alt="Graduate" class="h-6"/>
+							<img src="./graduate-cap.svg" alt="Graduate" class="h-6" />
 							<a href="/services/learning" class="font-semibold">Learning</a>
 						</div>
 						<div class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">
-							<img src="./robot.svg" alt="Automation" class="h-5"/>
+							<img src="./robot.svg" alt="Automation" class="h-5" />
 							<a href="/services/automation" class="font-semibold">Automation</a>
 						</div>
 					</div>
@@ -71,12 +73,15 @@
 					<img src="/instagram.svg" alt="instagram" class="w-5/12" />
 				</div>
 			</div>
-			<button
+			<a
+				href="/login"
 				class="px-4 py-1 text-white border-white border font-semibold rounded-md drop-shadow-sm"
-				>Login</button
+				>Login</a
 			>
-			<button class="px-4 py-1 text-neutral-800 bg-brand font-semibold rounded-md drop-shadow-sm"
-				>Sign Up</button
+			<a
+				href="/signup"
+				class="px-4 py-1 text-neutral-800 bg-brand font-semibold rounded-md drop-shadow-sm"
+				>Sign Up</a
 			>
 		</div>
 	</header>
