@@ -27,7 +27,7 @@
 	<header class="flex bg-neutral-800 h-20 items-center px-12 justify-between">
 		<nav class="flex space-x-12 items-center">
 			<a href="/"><img src="/temp-logo.svg" alt="Red Trade Logo" class="h-10" /></a>
-			<ul class="flex text-white items-center font-semibold">
+			<ul class="flex text-white items-center font-semibold space-x-1">
 				<li
 					class="relative cursor-pointer flex items-center py-2 px-3 hover:bg-[#2d2d2d] duration-150 rounded-md group"
 				>

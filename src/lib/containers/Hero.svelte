@@ -13,14 +13,17 @@
 		</div>
 		<div>
 			<div class=" glow flex items-center justify-center text-white">
-				<video class="absolute" width="448" autoplay loop>
-					<source src="/red-trade-final.mp4" type="video/mp4"/>
+				<video class="absolute top-[62px]" width="464" autoplay loop>
+					<source src="/RedTradeDemo.mp4" type="video/mp4"/>
 					<track kind="captions"/>
 				</video>
-				<img src="/redtrade-browser.svg" alt="Red Trade Browser Demo" class="h-80 z-20">
+				<img src="/redtrade-browser.svg" alt="Red Trade Browser Demo" class="w-[480px] z-20">
 	
 			</div>
 		</div>
+	</div>
+	<div class="w-full max-w-6xl">
+
 	</div>
 	<div class="w-full max-w-6xl">
 		<p class="text-neutral-400/80 uppercase font-semibold text-sm text-center">Integrates With:</p>
