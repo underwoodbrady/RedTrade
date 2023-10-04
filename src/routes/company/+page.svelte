@@ -30,8 +30,8 @@
 			</div>
 			<div class="text-neutral-200 text-sm mb-8">
 				<p class="mb-4">
-					<span class="text-lg font-semibold">Hi!</span><br /><br /> I am a 21 year old student from
-					Seattle who is currently studying Computer Science at Montana State University in Bozeman MT.
+					<span class="text-lg font-semibold">Hi!</span><br /><br /> I am a 21 year old software developer from
+					Seattle who is currently studying Computer Science at MSU in Bozeman MT.
 					I am passionate about personal finance and building modern interfaces. My goals for Red Trade
 					are:
 				</p>
