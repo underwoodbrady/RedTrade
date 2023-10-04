@@ -95,7 +95,7 @@
 	}
 
 	.move-updown {
-		animation: updown 0.7s ease-out infinite alternate;
+		animation: updown 0.7s ease-in-out infinite alternate;
 	}
 
 	@keyframes updown {
