@@ -1,4 +1,4 @@
-<main class="flex flex-1 flex-wrap bg-neutral-800 text-white text-lg px-12 py-4">
+<section class="flex flex-1 flex-wrap bg-neutral-800 text-white text-lg px-12 py-4">
 	<div
 		class="relative bg-[#303030] rounded-md drop-shadow-md p-6 w-80 h-52 flex flex-col justify-between"
 	>
@@ -114,7 +114,24 @@
 		</div>
 	</div>
 	<div
-		class="relative bg-[#303030] rounded-md drop-shadow-md p-6 mt-8 w-80 h-52 flex flex-col justify-between"
+		class="relative bg-[#303030] rounded-md drop-shadow-md p-6 mt-8 w-80 h-80 flex flex-col justify-between"
+	>
+		<div class="absolute right-7 top-7">
+			<img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-5" />
+		</div>
+		<div class="flex items-center space-x-6">
+			<h4 class="font-semibold text-neutral-200">Single Graph</h4>
+			<div
+				class="relative rounded-full bg-neutral-700 w-24 py-1 px-4 flex justify-between items-center font-semibold"
+			>
+				<p class="text-sm text-neutral-200">GME</p>
+				<img src="/chevron.svg" alt="Down Icon" class="h-4" />
+			</div>
+		</div>
+		<img src="/square-graph.png" alt="Mock graph" class=" absolute left-5 bottom-5 w-[290px]"/>
+	</div>
+	<div
+		class="relative bg-[#303030] rounded-md drop-shadow-md p-6 mt-8 w-80 h-52 flex flex-col justify-between mx-8"
 	>
 		<div class="absolute right-7 top-7">
 			<img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-5" />
@@ -124,16 +141,16 @@
 			<div
 				class="relative rounded-full bg-neutral-700 w-24 py-1 px-4 flex justify-between items-center font-semibold"
 			>
-				<p class="text-sm text-neutral-200">GME</p>
+				<p class="text-sm text-neutral-200">AMC</p>
 				<img src="/chevron.svg" alt="Down Icon" class="h-4" />
 			</div>
 		</div>
 		<div class="flex items-center justify-between">
-			<h2 class="text-5xl font-bold tracking-wide">$23.12</h2>
+			<h2 class="text-5xl font-bold tracking-wide">$5.56</h2>
 			<div class="flex flex-col">
 				<div class="flex items-center space-x-2">
-					<img src="/arrow-green.svg" alt="Arrow Green Up" class="h-3" />
-					<h5 class="text-lg text-green-500 font-semibold">1.2%</h5>
+					<img src="/arrow-red.svg" alt="Arrow Red Down" class="h-3" />
+					<h5 class="text-lg text-red-500 font-semibold">3.6%</h5>
 				</div>
 				<p class="text-neutral-400 font-normal text-sm">Last 24hr</p>
 			</div>
@@ -142,21 +159,21 @@
 			<div class="flex flex-col">
 				<div class="flex items-center space-x-4">
 					<p class="text-neutral-200 font-semibold text-sm">Open</p>
-					<p class="text-neutral-400">$20.01</p>
+					<p class="text-neutral-400">$6.51</p>
 				</div>
 				<div class="flex items-center space-x-4">
 					<p class="text-neutral-200 font-semibold text-sm">Close</p>
-					<p class="text-neutral-400">$23.12</p>
+					<p class="text-neutral-400">$5.56</p>
 				</div>
 			</div>
 			<div class="flex flex-col">
 				<div class="flex items-center space-x-4">
 					<p class="text-neutral-200 font-semibold text-sm">High</p>
-					<p class="text-neutral-400">$24.99</p>
+					<p class="text-neutral-400">$6.21</p>
 				</div>
 				<div class="flex items-center space-x-4">
 					<p class="text-neutral-200 font-semibold text-sm">Low</p>
-					<p class="text-neutral-400">$19.60</p>
+					<p class="text-neutral-400">$4.90</p>
 				</div>
 			</div>
 			<div class="relative flex flex-col items-center ml-2">
@@ -165,9 +182,9 @@
 				<img
 					src="/arrow-left.svg"
 					alt="White Arrow Ticker"
-					class="absolute left-[2px] top-2 h-2 rotate-180"
+					class="absolute left-[2px] top-1 h-2 rotate-180"
 				/>
 			</div>
 		</div>
 	</div>
-</main>
+</section>
