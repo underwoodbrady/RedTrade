@@ -17,25 +17,25 @@
 					class="py-2 px-4 my-1 hover:bg-neutral-600 rounded-md w-full text-left flex items-center space-x-2"
 				>
 					<img src="/graph-up.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
-					<p class="text-white text-sm font-semibold">Demo</p>
+					<p class="text-neutral-200 text-sm font-semibold">Demo</p>
 				</li>
 				<li
 					class="py-2 px-4 my-1 hover:bg-neutral-600 rounded-md w-full text-left flex items-center space-x-2"
 				>
 					<img src="/coins.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
-					<p class="text-white text-sm font-semibold">Day Trading</p>
+					<p class="text-neutral-200 text-sm font-semibold">Day Trading</p>
 				</li>
 				<li
 					class="py-2 px-4 my-1 hover:bg-neutral-600 rounded-md w-full text-left flex items-center space-x-2"
 				>
 					<img src="/piggy-bank.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
-					<p class="text-white text-sm font-semibold">Long Term</p>
+					<p class="text-neutral-200 text-sm font-semibold">Long Term</p>
 				</li>
 				<li
 					class="py-2 px-4 my-1 hover:bg-neutral-600 rounded-md w-full text-left flex items-center space-x-2"
 				>
 					<img src="/beaker.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
-					<p class="text-white text-sm font-semibold">Research</p>
+					<p class="text-neutral-200 text-sm font-semibold">Research</p>
 				</li>
 			</ul>
 		</div>
