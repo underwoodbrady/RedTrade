@@ -32,7 +32,7 @@
 					<p>Services</p>
 					<img src="/arrow-down.svg" alt="down arrow" class="h-3 ml-2 mt-[2px]" />
 					<div
-						class="absolute top-14 left-0 rounded-md bg-neutral-800 border border-neutral-600 p-2 scale-0 group-hover:scale-100 transition-all origin-top font-normal text-neutral-400 flex flex-col w-[166px]"
+						class="absolute top-14 left-0 rounded-md bg-neutral-800 border border-neutral-600 p-2 scale-0 group-hover:scale-100 transition-all origin-top text-neutral-400 flex flex-col w-[166px]"
 					>
 						<span class="absolute left-0 -top-4 h-4 w-full" />
 						<div class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">

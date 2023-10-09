@@ -1,6 +1,7 @@
 <script>
 	import Alert from '$lib/components/util/Alert.svelte';
 	import Dropdown from '$lib/components/util/Dropdown.svelte';
+	import ProfileCard from '$lib/components/util/ProfileCard.svelte';
 	import Search from '$lib/components/util/Search.svelte';
 </script>
 
@@ -12,7 +13,7 @@
 			R<span class="text-white font-bold">ed</span>
 		</h1>
 		<!--SIDEBAR-->
-		<div class="flex flex-col space-y-8">
+		<div class="flex flex-col space-y-10">
 			<img src="/home-white.svg" alt="Home Icon" class="w-8" />
 			<img src="/settings.svg" alt="Settings Icon" class="w-7" />
 			<img src="/people.svg" alt="People Icon" class="w-7" />
@@ -30,12 +31,7 @@
 			<div class="flex items-center space-x-8">
 				<Search />
 				<Alert />
-				<div
-					class="rounded-full bg-neutral-900 text-neutral-200 font-semibold pl-4 pr-1 py-2 text-sm flex justify-between items-center space-x-8"
-				>
-					<h3>Brady</h3>
-					<img src="/pfp.png" alt="Profile" class="w-7 h-7 -my-2 rounded-full" />
-				</div>
+				<ProfileCard/>
 			</div>
 		</header>
 		<main class="ml-20 pt-[84px]">
