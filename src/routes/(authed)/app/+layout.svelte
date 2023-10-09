@@ -1,8 +1,12 @@
+<script>
+	import Dropdown from "$lib/components/util/Dropdown.svelte";
+
+</script>
 <div class="relative w-full h-full">
 	<section
 		class="h-screen bg-[#303030] w-20 drop-shadow-md flex items-center py-6 flex-col fixed left-0 top-0 z-50"
 	>
-		<h1 class="text-2xl font-bold text-brand mb-12">R<span class="text-white">ed</span></h1>
+		<h1 class="text-2xl font-extrabold text-brand mb-12">R<span class="text-white font-bold">ed</span></h1>
 		<!--SIDEBAR-->
 		<div class="flex flex-col space-y-8">
 			<img src="/home-white.svg" alt="Home Icon" class="w-8" />
@@ -17,12 +21,7 @@
 		>
 			<div class="flex items-center space-x-8">
 				<h2 class="font-semibold text-2xl text-white">Dashboard #1</h2>
-				<div
-					class="rounded-full w-44 py-2 px-4 bg-[#303030] text-neutral-300 text-sm font-semibold flex space-x-4 items-center justify-between drop-shadow-sm"
-				>
-					<p>Select</p>
-					<img src="/chevron.svg" alt="Down Icon" class="h-4" />
-				</div>
+				<Dropdown/>
 			</div>
 			<div class="flex items-center space-x-8">
 				<div

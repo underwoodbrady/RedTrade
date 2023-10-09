@@ -2,27 +2,25 @@
 	export let bannerOpen: boolean = true;
 </script>
 
-{#if true}
-	<section
-		class={bannerOpen
-			? 'w-full flex py-2 bg-brand justify-center text-neutral-800'
-			: 'w-full flex py-2 bg-brand justify-center text-neutral-800 hide-anim'}
-	>
-		<p class="">
-			📈 Red Trade BETA is now live for testing. <span class="underline cursor-pointer"
-				>Sign Up Now!</span
-			> 📈
-		</p>
-		<button
-			on:click={() => {
-				bannerOpen = false;
-			}}
-			><span class="font-bold absolute right-12 top-3 font cursor-pointer"
-				><img src="/close-x.svg" alt="close banner" class="w-4" /></span
-			>
-		</button>
-	</section>
-{/if}
+<section
+	class={bannerOpen
+		? 'w-full flex py-2 bg-brand justify-center text-neutral-800'
+		: 'w-full flex py-2 bg-brand justify-center text-neutral-800 hide-anim'}
+>
+	<p class="">
+		📈 Red Trade BETA is now live for testing. <span class="underline cursor-pointer"
+			>Sign Up Now!</span
+		> 📈
+	</p>
+	<button
+		on:click={() => {
+			bannerOpen = false;
+		}}
+		><span class="font-bold absolute right-12 top-3 font cursor-pointer"
+			><img src="/close-x.svg" alt="close banner" class="w-4" /></span
+		>
+	</button>
+</section>
 <section class="sticky left-0 top-0 mt-0 drop-shadow-md z-50">
 	<header class="flex bg-neutral-800 h-20 items-center px-12 justify-between">
 		<nav class="flex space-x-12 items-center">
