@@ -1,4 +1,4 @@
-<section class="flex flex-1 flex-wrap bg-neutral-800 text-white text-lg px-12 py-4">
+<section class="flex flex-1 flex-wrap bg-neutral-800 text-white text-lg px-12 py-4 min-h-screen">
 	<div
 		class="relative bg-[#303030] rounded-md drop-shadow-md p-6 w-80 h-52 flex flex-col justify-between"
 	>
@@ -8,7 +8,9 @@
 		<div class="flex items-center space-x-4">
 			<h4 class="font-semibold text-neutral-200">Market Time</h4>
 			<div class="relative rounded-full bg-green-500 w-3 h-3">
-				<div class="" />
+				<div class="absolute -top-1 -right-1 bg-[#303030] rounded-full w-[10px] h-[10px]">
+					<img src="/info-white.svg" alt="Info Icon" class="w-full"/>
+				</div>
 			</div>
 		</div>
 		<div class="flex items-baseline space-x-2">

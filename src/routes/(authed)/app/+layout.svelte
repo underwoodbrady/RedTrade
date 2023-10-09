@@ -31,8 +31,9 @@
 					<img src="/search.svg" alt="Search Icon" class="h-4" />
 					<p>Search</p>
 				</div>
-				<div class="py-2 px-2 bg-neutral-900 rounded-full">
+				<div class="relative py-2 px-2 bg-neutral-900 rounded-full">
 					<img src="/bell.svg" alt="Bell" class="h-[18px]" />
+					<div class="absolute -right-1 -top-1 bg-red-500 rounded-full w-4 h-4 text-xs font-semibold text-white flex items-center justify-center">2</div>
 				</div>
 				<div
 					class="rounded-full bg-neutral-900 text-neutral-200 font-semibold pl-4 pr-1 py-2 text-sm flex justify-between items-center space-x-8"
