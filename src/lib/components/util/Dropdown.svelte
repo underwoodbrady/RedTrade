@@ -37,6 +37,11 @@
 					<img src="/beaker.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
 					<p class="text-neutral-200 text-sm font-semibold">Research</p>
 				</li>
+				<li
+					class="h-9 my-1 hover:bg-neutral-600 rounded-md w-full flex items-center justify-center bg-neutral-600 hover:border-2 border-neutral-500"
+				>
+					<img src="/add.svg" alt="Add Icon" class="h-4 mt-[1px]" />
+				</li>
 			</ul>
 		</div>
 	{/if}
