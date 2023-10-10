@@ -5,13 +5,15 @@
 	import Search from '$lib/components/util/Search.svelte';
 </script>
 
+<svelte:head>
+	<title>(2) Dashboard #1</title>
+</svelte:head>
+
 <div class="relative w-full h-full">
 	<section
-		class="h-screen bg-[#303030] w-20 drop-shadow-md flex items-center py-6 flex-col fixed left-0 top-0 z-50"
+		class="h-screen bg-[#303030] w-20 drop-shadow-md flex items-center py-8 flex-col fixed left-0 top-0 z-50"
 	>
-		<h1 class="text-2xl font-extrabold text-brand mb-12">
-			R<span class="text-white font-bold">ed</span>
-		</h1>
+		<img src="/temp-logo-condensed.svg" alt="Temporary Shortened Logo" class="w-11 mb-12"/>
 		<!--SIDEBAR-->
 		<div class="flex flex-col space-y-10">
 			<img src="/home-white.svg" alt="Home Icon" class="w-8" />
