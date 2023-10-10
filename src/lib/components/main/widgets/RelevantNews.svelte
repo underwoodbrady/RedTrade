@@ -1,0 +1,18 @@
+<script lang="ts">
+	import WidgetTall from '../WidgetTall.svelte';
+</script>
+
+<WidgetTall>
+    <div class="absolute right-7 top-7">
+        <img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-5" />
+    </div>
+    <div class="flex items-center space-x-6">
+        <h4 class="font-semibold text-neutral-200">Recent News</h4>
+        <div
+            class="relative rounded-full bg-neutral-700 w-24 py-1 px-4 flex justify-between items-center font-semibold"
+        >
+            <p class="text-sm text-neutral-200">Select</p>
+            <img src="/chevron.svg" alt="Down Icon" class="h-4" />
+        </div>
+    </div>
+</WidgetTall>
