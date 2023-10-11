@@ -49,7 +49,7 @@
 	<WideGraph/>
 	<LargestGains/>
 	<LargestLoses/>
-
+	<SquareGraph/>
 
 </section>
 
