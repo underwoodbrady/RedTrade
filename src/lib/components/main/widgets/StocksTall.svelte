@@ -48,7 +48,7 @@
 	<div class="flex items-center">
 		<h4 class="font-semibold text-neutral-200">My Stocks</h4>
 	</div>
-    <table class="w-full border-collapse border-spacing-y-2 mb-auto mt-2">
+    <table class="w-full border-collapse border-spacing-y-2 mb-auto mt-3">
         <thead>
             <tr class="text-left text-sm font-medium text-neutral-400 h-10">
                 <th>Ticker</th>
@@ -70,13 +70,16 @@
                         <p class="text-neutral-200 font-semibold text-base">${stock.last}</p>
                     </td>
                     <td class="text-right">
-                        <p class={stock.change>0 ? "text-green-500 text-base" : "text-red-500 text-base"}>{stock.change}%</p>
+                        <p class={stock.change>0 ? "text-green-500 text-sm" : "text-red-500 text-sm"}>{stock.change}%</p>
                     </td>
                 </tr>
             {/each}
         </tbody>
     </table>
-	<section class="text-sm text-neutral-400">
+	<section class="text-sm text-neutral-400 flex justify-between w-full items-center px-20">
+        <img src="/chevron.svg" alt="Arrow Left" class="h-4 rotate-90 cursor-pointer"/>
 	1/1
+    <img src="/chevron.svg" alt="Arrow Left" class="h-4 rotate-[-90deg] cursor-pointer"/>
+
 	</section>
 </WidgetTall>
