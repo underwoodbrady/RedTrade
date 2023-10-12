@@ -9,7 +9,7 @@
 		<img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-5" />
 	</div>
 	<div class="flex items-center space-x-6">
-		<h4 class="font-semibold text-neutral-200">Additionals</h4>
+		<h4 class="font-semibold text-neutral-200">Stats</h4>
 		<div
 			class="relative rounded-full bg-neutral-700 w-24 py-1 px-4 flex justify-between items-center font-semibold"
 		>
@@ -18,14 +18,14 @@
 		</div>
 	</div>
 	<section class="flex justify-between">
-        <div class="flex space-x-5">
-            <div class="flex flex-col space-y-2">
-                <h3 class="text-base font-semibold text-neutral-200">4-wk</h3>
-                <h3 class="text-base font-semibold text-neutral-200">52-wk</h3>
+        <div class="flex flex-col mt-1">
+            <div class="flex items-center space-x-10">
+                <h3 class="text-sm font-semibold text-neutral-200">4-wk</h3>
+				<h3 class="text-base  text-neutral-400">$14.70 <span class="text-neutral-200">-</span> $16.09</h3>
             </div>
-            <div class="flex flex-col space-y-2">
-                <h3 class="text-base  text-neutral-400">$14.70 - $16.09</h3>
-                <h3 class="text-base  text-neutral-400">$14.44 - $34.99</h3>
+            <div class="flex items-center space-x-8">
+				<h3 class="text-sm font-semibold text-neutral-200">52-wk</h3>
+                <h3 class="text-base  text-neutral-400">$14.44 <span class="text-neutral-200">-</span> $34.99</h3>
             </div>
         </div>
 
