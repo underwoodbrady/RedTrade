@@ -46,7 +46,7 @@
 		<img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-5" />
 	</div>
 	<div class="flex items-center">
-		<h4 class="font-semibold text-neutral-200">My Stocks</h4>
+		<h4 class="font-semibold text-neutral-200">My Investments</h4>
 	</div>
     <table class="w-full border-collapse border-spacing-y-2 mb-auto mt-3">
         <thead>
