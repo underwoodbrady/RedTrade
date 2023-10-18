@@ -1,13 +1,16 @@
-<script>
+<script lang='ts'>
 	import Alert from '$lib/components/util/Alert.svelte';
 	import Dropdown from '$lib/components/util/Dropdown.svelte';
 	import ProfileCard from '$lib/components/util/ProfileCard.svelte';
 	import Search from '$lib/components/util/Search.svelte';
+
+	//Can probably do some sort of svelte:fragment named slot nonsense
 </script>
 
 <svelte:head>
 	<title>(2) Dashboard #1</title>
 </svelte:head>
+
 
 <div class="relative w-full h-full">
 	<section
@@ -22,10 +25,11 @@
 		</div>
 		<div />
 	</section>
-	<section>
+	<section class="bg-neutral-800">
 		<header
-			class="flex items-center z-30 px-12 justify-between py-6 bg-neutral-800 fixed left-20 top-0 w-[calc(100%-80px)]"
+			class="flex items-center z-30 px-12 justify-between pt-6 pb-4 bg-neutral-800 fixed left-20 top-0 w-[calc(100%-80px)]"
 		>
+			<div class="absolute left-0 top-full w-full h-4 bg-gradient-to-b from-neutral-800 to-transparent"/>
 			<div class="flex items-center space-x-8">
 				<h2 class="font-semibold text-2xl text-white">Dashboard #1</h2>
 				<Dropdown />
