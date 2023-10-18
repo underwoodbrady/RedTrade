@@ -13,8 +13,8 @@
 	import SingleStockAdditional from '$lib/components/main/widgets/SingleStockAdditional.svelte';
 	import RelevantNews from '$lib/components/main/widgets/RelevantNews.svelte';
 	import WideGraph from '$lib/components/main/widgets/WideGraph.svelte';
-	import LargestGains from '$lib/components/main/widgets/LargestGains.svelte';
-	import LargestLoses from '$lib/components/main/widgets/LargestLoses.svelte';
+	import LargestGains from '$lib/components/main/widgets/XLargestGains.svelte';
+	import LargestLoses from '$lib/components/main/widgets/XLargestLoses.svelte';
 
 </script>
 
