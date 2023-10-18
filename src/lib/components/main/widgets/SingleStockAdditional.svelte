@@ -19,26 +19,24 @@
 	</div>
 	<section class="flex justify-between">
         <div class="flex flex-col mt-1">
-            <div class="flex items-center space-x-10">
+            <div class="flex items-center space-x-8">
                 <h3 class="text-sm font-semibold text-neutral-200">4-wk</h3>
 				<h3 class="text-base  text-neutral-400">$14.70 <span class="text-neutral-200">-</span> $16.09</h3>
             </div>
-            <div class="flex items-center space-x-8">
+            <div class="flex items-center space-x-6">
 				<h3 class="text-sm font-semibold text-neutral-200">52-wk</h3>
                 <h3 class="text-base  text-neutral-400">$14.44 <span class="text-neutral-200">-</span> $34.99</h3>
             </div>
         </div>
 
-		<div class="flex flex-col items-center space-y-1">
+		<div class="mr-1">
 			<div
-				class="relative border-2 border-neutral-300 rounded-full h-14 w-14 flex items-center justify-center"
+				class="relative border-2 border-neutral-300 rounded-full h-14 w-14"
 			>
-				<img
-					src="/percentportfolio.svg"
-					alt="Rounded Ellipse"
-					class="h-[calc(100%+1px)] w-[calc(100%+1px)] absolute -left-[1px] -top-[1px] rounded-full"
-				/>
-				<h3 class="text-indigo-500 font-bold text-xs">67.2%</h3>
+				<div class="relative border-4 -rotate-45 w-full h-full border-indigo-500 border-r-transparent rounded-full flex items-center justify-center">
+					<h3 class="text-indigo-500 font-bold text-xs rotate-45">67.2%</h3>
+
+				</div>
 				<div class="absolute -top-[2px] -right-[2px] bg-[#303030] rounded-full w-[10px] h-[10px]">
 					<img src="/info-white.svg" alt="Info Icon" class="w-full" />
 				</div>
