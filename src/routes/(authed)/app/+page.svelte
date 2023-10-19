@@ -4,7 +4,14 @@
 	import Settings from "$lib/containers/Settings.svelte";
 	import Community from "$lib/containers/Community.svelte";
 
-	let selectedPage:string = 'app';
+	import { currentPage } from "./pages";
+	import type {pages} from "./pages"
+
+	let selectedPage:pages = $currentPage;
+
+	currentPage.subscribe((page:pages)=>{
+		selectedPage = page;
+	})
 
 </script>
 
