@@ -6,6 +6,10 @@
 
 	import { currentPage } from './pages';
 
+	let modules = {
+		
+	}
+
 	//Can probably do some sort of svelte:fragment named slot nonsense
 </script>
 
@@ -102,7 +106,11 @@
 			/>
 			<div class="flex items-center space-x-8">
 				<h2 class="font-semibold text-2xl text-white">Dashboard #1</h2>
-				<Dropdown />
+				<Dropdown itemSelected={()=>{
+					modules = {
+						change: "something in here"
+					}
+				}} />
 			</div>
 			<div class="flex items-center space-x-8">
 				<Search />
