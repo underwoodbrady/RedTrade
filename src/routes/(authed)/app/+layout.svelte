@@ -71,7 +71,7 @@
 					id="Layer_1"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 800 600"
-					class="fill-[#878787] hover:fill-white duration-75 w-7"
+					class={$currentPage == 'community' ? "fill-white w-7" : "fill-[#878787] w-7 hover:fill-white duration-75"}
 					><defs
 						><style>
 							.cls-1 {
