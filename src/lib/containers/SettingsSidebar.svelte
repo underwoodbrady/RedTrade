@@ -6,7 +6,7 @@
 </script>
 
 <section
-	class="fixed left-20 top-0 p-6 w-52 h-full drop-shadow-md bg-neutral-900 flex flex-col space-y-6"
+	class="fixed left-20 top-0 p-6 w-52 h-full border-r border-neutral-700 bg-neutral-800 flex flex-col space-y-6"
 >
 <h4 class="text-neutral-200 font-semibold text-lg">Settings</h4>
 	<div>

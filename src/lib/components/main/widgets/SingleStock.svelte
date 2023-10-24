@@ -18,7 +18,7 @@
 
 <Widget>
     <div class="absolute right-7 top-7">
-        <img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-5" />
+        <img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-4" />
     </div>
     <div class="flex items-center space-x-6">
         <h4 class="font-semibold text-neutral-200">Single Stock</h4>
@@ -48,22 +48,22 @@
     <div class="flex items-center justify-between">
         <div class="flex flex-col">
             <div class="flex items-center space-x-4">
-                <p class="text-neutral-200 font-semibold text-sm">Open</p>
-                <p class="text-neutral-400">${openPrice}</p>
+                <p class="text-neutral-400 font-semibold text-sm">Open</p>
+                <p class="text-neutral-200">${openPrice}</p>
             </div>
             <div class="flex items-center space-x-4">
-                <p class="text-neutral-200 font-semibold text-sm">Close</p>
-                <p class="text-neutral-400">${closePrice}</p>
+                <p class="text-neutral-400 font-semibold text-sm">Close</p>
+                <p class="text-neutral-200">${closePrice}</p>
             </div>
         </div>
         <div class="flex flex-col">
             <div class="flex items-center space-x-4">
-                <p class="text-neutral-200 font-semibold text-sm">High</p>
-                <p class="text-neutral-400">${highPrice}</p>
+                <p class="text-neutral-400 font-semibold text-sm">High</p>
+                <p class="text-neutral-200">${highPrice}</p>
             </div>
             <div class="flex items-center space-x-4">
-                <p class="text-neutral-200 font-semibold text-sm">Low</p>
-                <p class="text-neutral-400">${lowPrice}</p>
+                <p class="text-neutral-400 font-semibold text-sm">Low</p>
+                <p class="text-neutral-200">${lowPrice}</p>
             </div>
         </div>
         <div class="relative flex flex-col items-center ml-2">

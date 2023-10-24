@@ -1,5 +1,4 @@
 <script lang="ts">
-
 	import Clock from '$lib/components/main/widgets/Clock.svelte';
 	import SingleStock from '$lib/components/main/widgets/SingleStock.svelte';
 	import SquareGraph from '$lib/components/main/widgets/SquareGraph.svelte';
@@ -11,12 +10,12 @@
 	import WideGraph from '$lib/components/main/widgets/WideGraph.svelte';
 	import LargestGains from '$lib/components/main/widgets/XLargestGains.svelte';
 	import LargestLoses from '$lib/components/main/widgets/XLargestLoses.svelte';
-
+	import Accounts from '$lib/components/main/widgets/Accounts.svelte';
+	import XAssetMix from '$lib/components/main/widgets/XAssetMix.svelte';
+	import XMultiSmallGraph from '$lib/components/main/widgets/XMultiSmallGraph.svelte';
 </script>
 
-<section
-	class="grid small-grid gap-6 text-white text-lg px-12 py-4 min-h-screen min-w-0"
->
+<section class="grid small-grid gap-6 text-white text-lg px-12 py-4 min-h-screen min-w-0">
 	<Clock />
 	<Summary />
 	<SingleStock
@@ -32,26 +31,27 @@
 	<SectorAllocation />
 	<SquareGraph />
 	<SingleStock
-	symbol="AMC"
-	tradePrice="5.56"
-	highPrice="6.51"
-	lowPrice="4.90"
-	openPrice="6.51"
-	closePrice="5.56"
-	last24HourChange="-3.6"
-/>
-<SingleStockAdditional symbol="GME"/>
+		symbol="AMC"
+		tradePrice="5.56"
+		highPrice="6.51"
+		lowPrice="4.90"
+		openPrice="6.51"
+		closePrice="5.56"
+		last24HourChange="-3.6"
+	/>
+	<SingleStockAdditional symbol="GME" />
 	<RelevantNews />
-	<WideGraph/>
-	<LargestGains/>
-	<LargestLoses/>
-	<SquareGraph/>
-
+	<WideGraph />
+	<LargestGains />
+	<LargestLoses />
+	<SquareGraph />
+	<Accounts />
+	<XAssetMix />
+	<XMultiSmallGraph />
 </section>
 
-
 <style>
-	.small-grid{
+	.small-grid {
 		grid-template-columns: repeat(3, min-content);
 	}
 </style>

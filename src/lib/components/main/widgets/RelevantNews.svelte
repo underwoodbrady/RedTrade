@@ -4,7 +4,7 @@
 
 <WidgetTall>
     <div class="absolute right-7 top-7">
-        <img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-5" />
+        <img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-4" />
     </div>
     <div class="flex items-center space-x-6 mb-5">
         <h4 class="font-semibold text-neutral-200">Recent News</h4>
