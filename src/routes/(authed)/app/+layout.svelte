@@ -3,124 +3,62 @@
 	import Dropdown from '$lib/components/util/Dropdown.svelte';
 	import ProfileCard from '$lib/components/util/ProfileCard.svelte';
 	import Search from '$lib/components/util/Search.svelte';
+	import SettingsSidebar from '$lib/containers/SettingsSidebar.svelte';
+	import Sidebar from '$lib/containers/Sidebar.svelte';
 
-	import { currentPage } from './pages';
+	import { currentPage, currentSetting } from './pages';
 
-	let modules = {
-		
-	}
+	let modules = {};
 
 	//Can probably do some sort of svelte:fragment named slot nonsense
 </script>
 
 <svelte:head>
-	<title>(2) Dashboard #1</title>
+	<title>(2) Dashboard #1 - Red Trade</title>
 </svelte:head>
 
 <div class="relative w-full h-full">
-	<section
-		class="h-screen bg-[#303030] w-20 drop-shadow-md flex items-center py-8 flex-col fixed left-0 top-0 z-50"
-	>
-		<img src="/temp-logo-condensed.svg" alt="Temporary Shortened Logo" class="w-11 mb-12" />
-		<!--SIDEBAR-->
-		<div class="flex flex-col space-y-10">
-			<button on:click={() => currentPage.set('app')}>
-				<svg
-					version="1.1"
-					id="Layer_1"
-					xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink"
-					x="0px"
-					y="0px"
-					viewBox="0 0 800 800"
-					style="enable-background:new 0 0 800 800;"
-					xml:space="preserve"
-					class={$currentPage == 'app'
-						? 'fill-white w-8'
-						: 'fill-[#878787] w-8 hover:fill-white duration-75'}
-				>
-					<path
-						class="st0"
-						d="M72.3,351.8c-10.2-15.3-6.1-36,9.3-46.2c0,0,0,0,0,0l300-200c11.2-7.5,25.8-7.5,37,0l300,200
-	c15.3,10.2,19.5,30.9,9.2,46.2c-6.2,9.3-16.6,14.9-27.8,14.8h-66.7v300c0,18.4-14.9,33.3-33.3,33.3H200c-18.4,0-33.3-14.9-33.3-33.3
-	v-300H100l0.6-0.6C89.4,366.5,78.6,361.1,72.3,351.8z"
-					/>
-				</svg>
-			</button>
-			<button on:click={() => currentPage.set('settings')}>
-				<svg
-					id="Layer_1"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 785.1 800"
-					class={$currentPage == 'settings' ? "fill-white w-7" : "fill-[#878787] w-7 hover:fill-white duration-75"}
-					><defs
-						><style>
-							.cls-1 {
-								fill-rule: evenodd;
-								stroke-width: 0px;
-							}
-						</style></defs
-					><path
-						class="cls-1"
-						d="m702.3,400c0-17.4-1.6-35.2-4.8-53l87.6-75.9-83.1-142-110.5,36.8c-27.9-23.2-59.7-41.4-93.3-53.5L475.4,0h-165.8l-22.8,112.4c-33.9,12.1-65.2,30.1-93.3,53.5l-110.4-36.8L0,271.1l87.6,75.9c-3.2,17.8-4.8,35.6-4.8,53s1.6,35.2,4.8,53L0,528.9l83.1,142,110.5-36.8c27.9,23.2,59.7,41.4,93.3,53.5l22.7,112.4h165.7l22.8-112.4c33.9-12.1,65.2-30.1,93.3-53.5l110.5,36.9,83.1-142-87.5-76c3.2-17.8,4.8-35.6,4.8-53m-309.8,164.7c-90.8,0-164.7-73.9-164.7-164.7s73.9-164.7,164.7-164.7,164.7,73.9,164.7,164.7-73.9,164.7-164.7,164.7"
-					/></svg
-				>
-			</button>
-			<button on:click={() => currentPage.set('community')}>
-				<svg
-					id="Layer_1"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 800 600"
-					class={$currentPage == 'community' ? "fill-white w-7" : "fill-[#878787] w-7 hover:fill-white duration-75"}
-					><defs
-						><style>
-							.cls-1 {
-								fill-rule: evenodd;
-							}
-							.cls-1,
-							.cls-2 {
-								stroke-width: 0px;
-							}
-						</style></defs
-					><path
-						class="cls-2"
-						d="m350,600s-50,0-50-50,50-200,250-200,250,150,250,200-50,50-50,50h-400Zm200-300c82.8,0,150-67.2,150-150S632.8,0,550,0s-150,67.2-150,150,67.2,150,150,150Z"
-					/><path
-						class="cls-1"
-						d="m260.8,600c-7.4-15.6-11.1-32.7-10.8-50,0-67.8,34-137.5,96.8-186-31.3-9.7-64-14.4-96.8-14C50,350,0,500,0,550s50,50,50,50h210.8Z"
-					/><path
-						class="cls-2"
-						d="m225,300c69,0,125-56,125-125s-56-125-125-125-125,56-125,125,56,125,125,125Z"
-					/></svg
-				>
-			</button>
-		</div>
-		<div />
-	</section>
+	<Sidebar
+		currentPage={$currentPage}
+		updateCurrentPage={(page) => {
+			currentPage.set(page);
+		}}
+	/>
 	<section class="bg-neutral-800">
-		<header
-			class="flex items-center z-30 px-12 justify-between pt-6 pb-4 bg-neutral-800 fixed left-20 top-0 w-[calc(100%-80px)]"
-		>
-			<div
-				class="absolute left-0 top-full w-full h-4 bg-gradient-to-b from-neutral-800 to-transparent"
-			/>
-			<div class="flex items-center space-x-8">
-				<h2 class="font-semibold text-2xl text-white">Dashboard #1</h2>
-				<Dropdown itemSelected={()=>{
-					modules = {
-						change: "something in here"
-					}
-				}} />
-			</div>
-			<div class="flex items-center space-x-8">
-				<Search />
-				<Alert />
-				<ProfileCard />
-			</div>
-		</header>
-		<main class="ml-20 pt-[84px]">
-			<slot />
-		</main>
+		{#if $currentPage == 'app' || $currentPage == 'community'}
+			<header
+				class="flex items-center z-30 px-12 justify-between pt-6 pb-4 bg-neutral-800 fixed left-20 top-0 w-[calc(100%-80px)]"
+			>
+				<div
+					class="absolute left-0 top-full w-full h-4 bg-gradient-to-b from-neutral-800 to-transparent"
+				/>
+				<div class="flex items-center space-x-8">
+					<h2 class="font-semibold text-2xl text-white">Dashboard #1</h2>
+					<Dropdown
+						itemSelected={() => {
+							modules = {
+								change: 'something in here'
+							};
+						}}
+					/>
+				</div>
+				<div class="flex items-center space-x-8">
+					<Search />
+					<Alert />
+					<ProfileCard />
+				</div>
+			</header>
+			<main class="ml-20 pt-[84px]">
+				<slot />
+			</main>
+		{:else if $currentPage == 'settings'}
+			<SettingsSidebar selectedSetting={$currentSetting} updateSelectedSetting={(setting)=>{currentSetting.set(setting)}}/>
+				<main class="ml-[288px]">
+					<slot />
+				</main>
+		{/if}
+
+
 	</section>
 </div>
 
