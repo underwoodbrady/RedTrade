@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { currentSetting } from '../../routes/(authed)/app/pages';
 	import Dropdown from './SettingsInputs/Dropdown.svelte';
+	import Input from './SettingsInputs/Input.svelte';
 	import Toggle from './SettingsInputs/Toggle.svelte';
 	let title = '';
 
@@ -106,7 +107,7 @@
 				{:else if setting.type == 'toggle'}
 					<Toggle checked = {setting.default == 'on'} sublabel={setting.sublabel}/>
 				{:else if setting.type == 'input'}
-					<div />
+					<Input/>
 				{:else if setting.type == 'inputdate'}
 					<div />
 				{:else if setting.type == 'inputphone'}
