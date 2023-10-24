@@ -16,7 +16,7 @@
         </div>
     </div>
     <section class="flex flex-col items-center w-full mb-auto">
-        <div class="flex flex-col space-y-2 py-3 px-6 -mx-6 hover:bg-neutral-700 hover:drop-shadow-sm cursor-pointer duration-75">
+        <div class="flex flex-col space-y-1 py-3 px-6 -mx-6 hover:bg-neutral-700 hover:drop-shadow-sm cursor-pointer duration-75">
             <div class="flex justify-between space-x-4 ">
                 <h5 class="text-base mb-1 leading-tight text-neutral-200">United Airlines (UAL) says pricier fuel, war in Middle East, will we...</h5>
                 <div class="relative object-cover max-w-[60px]">
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col space-y-2 py-3 px-6 -mx-6 hover:bg-neutral-700 hover:drop-shadow-sm cursor-pointer duration-75">
+        <div class="flex flex-col space-y-1 py-3 px-6 -mx-6 hover:bg-neutral-700 hover:drop-shadow-sm cursor-pointer duration-75">
             <div class="flex justify-between space-x-4 ">
                 <h5 class="text-base mb-1 leading-tight text-neutral-200">United Airlines (UAL) says pricier fuel, war in Middle East, will we...</h5>
                 <div class="relative object-cover max-w-[60px]">
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col space-y-2 py-3 px-6 -mx-6 hover:bg-neutral-700 hover:drop-shadow-sm cursor-pointer duration-75">
+        <div class="flex flex-col space-y-1 py-3 px-6 -mx-6 hover:bg-neutral-700 hover:drop-shadow-sm cursor-pointer duration-75">
             <div class="flex justify-between space-x-4 ">
                 <h5 class="text-base mb-1 leading-tight text-neutral-200">United Airlines (UAL) says pricier fuel, war in Middle East, will we...</h5>
                 <div class="relative object-cover max-w-[60px]">
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col space-y-2 py-3 px-6 -mx-6 hover:bg-neutral-700 hover:drop-shadow-sm cursor-pointer duration-75">
+        <div class="flex flex-col space-y-1 py-3 px-6 -mx-6 hover:bg-neutral-700 hover:drop-shadow-sm cursor-pointer duration-75">
             <div class="flex justify-between space-x-4 ">
                 <h5 class="text-base mb-1 leading-tight text-neutral-200">United Airlines (UAL) says pricier fuel, war in Middle East, will we...</h5>
                 <div class="relative object-cover max-w-[60px]">

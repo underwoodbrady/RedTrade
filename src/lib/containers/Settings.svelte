@@ -28,4 +28,8 @@
 
 <section class="px-12 py-6 min-h-screen min-w-0">
 	<h1 class="text-2xl text-white">{title}</h1>
+    <div class="w-full h-96 flex items-center justify-center">
+
+        <p class="text-neutral-400">Nothing here yet</p>
+    </div>
 </section>

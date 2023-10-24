@@ -15,7 +15,7 @@
 </script>
 
 <section
-	class="grid small-grid gap-8 text-white text-lg px-12 py-4 min-h-screen min-w-0"
+	class="grid small-grid gap-6 text-white text-lg px-12 py-4 min-h-screen min-w-0"
 >
 	<Clock />
 	<Summary />
