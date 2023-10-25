@@ -24,7 +24,7 @@
 			</div>
 		</div>
 		<div class="flex items-center">
-			<h5 class="text-base text-neutral-200 w-20">Goal:</h5>
+			<h5 class="text-base text-neutral-200 w-20 ">Goal:</h5>
 			<div class="h-10 w-full border border-dashed border-neutral-500 flex items-center justify-between px-4 space-x-4 rounded-sm">
 				<p class="text-neutral-400 text-sm font-semibold">You don't currently have a goal set</p>
 				<a class="text-neutral-200 text-sm font-semibold flex items-center" href="/app">Set now <img src="/arrow-right-grey.svg" alt="Arrow to the right" class="w-3 ml-2"/> </a>
