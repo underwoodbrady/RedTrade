@@ -80,8 +80,8 @@
 				{
 					type: 'dropdown',
 					label: 'Data Sharing',
-					options: ['Minimal', 'Normal'],
-					default: 'Minimal'
+					options: ['Required', 'Normal'],
+					default: 'Required'
 				}
 			];
 			break;
@@ -95,11 +95,11 @@
 	}
 </script>
 
-<section class="px-12 py-6 min-h-screen min-w-0">
+<section class="px-12 py-6 min-h-screen">
 	<h1 class="text-2xl text-white font-semibold mb-8">{title}</h1>
-	<div class="w-full h-96 flex justify-center">
+	<div class="w-full flex-1 flex justify-center">
 		{#if settingOptions.length > 0}
-			<div class="flex flex-col space-y-4 w-full max-w-4xl">
+			<div class="flex flex-col space-y-4 w-full max-w-5xl h-full">
 			{#each settingOptions as setting, label}
 				<h4 class="text-neutral-200">{setting.label}</h4>
 				{#if setting.type == 'dropdown'}

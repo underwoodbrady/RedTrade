@@ -11,7 +11,7 @@
 	import LargestGains from '$lib/components/main/widgets/XLargestGains.svelte';
 	import LargestLoses from '$lib/components/main/widgets/XLargestLoses.svelte';
 	import Accounts from '$lib/components/main/widgets/Accounts.svelte';
-	import XAssetMix from '$lib/components/main/widgets/XAssetMix.svelte';
+	import AssetMix from '$lib/components/main/widgets/AssetMix.svelte';
 	import XMultiSmallGraph from '$lib/components/main/widgets/XMultiSmallGraph.svelte';
 </script>
 
@@ -46,7 +46,7 @@
 	<LargestLoses />
 	<SquareGraph />
 	<Accounts />
-	<XAssetMix />
+	<AssetMix />
 	<XMultiSmallGraph />
 </section>
 

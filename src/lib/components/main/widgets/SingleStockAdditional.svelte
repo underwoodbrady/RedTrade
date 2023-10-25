@@ -20,12 +20,12 @@
 	<section class="flex justify-between">
         <div class="flex flex-col mt-1">
             <div class="flex items-center space-x-8">
-                <h3 class="text-sm font-semibold text-neutral-200">4-wk</h3>
-				<h3 class="text-base  text-neutral-400">$14.70 <span class="text-neutral-200">-</span> $16.09</h3>
+                <h3 class="text-sm font-semibold text-neutral-400">4-wk</h3>
+				<h3 class="text-base  text-neutral-200">$14.70 <span class="text-neutral-200">-</span> $16.09</h3>
             </div>
             <div class="flex items-center space-x-6">
-				<h3 class="text-sm font-semibold text-neutral-200">52-wk</h3>
-                <h3 class="text-base  text-neutral-400">$14.44 <span class="text-neutral-200">-</span> $34.99</h3>
+				<h3 class="text-sm font-semibold text-neutral-400">52-wk</h3>
+                <h3 class="text-base  text-neutral-200">$14.44 <span class="text-neutral-200">-</span> $34.99</h3>
             </div>
         </div>
 
@@ -46,22 +46,22 @@
 	<section class="text-base flex items-center space-x-10">
 		<div class="flex flex-col">
 			<div class="flex items-center space-x-4">
-				<p class="text-neutral-200 font-semibold text-sm">Mkt Cap</p>
-				<p class="text-neutral-400">4.83B</p>
+				<p class="text-neutral-400 font-semibold text-sm">Mkt Cap</p>
+				<p class="text-neutral-200">4.83B</p>
 			</div>
 			<div class="flex items-center space-x-4">
-				<p class="text-neutral-200 font-semibold text-sm">Avg Vol</p>
-				<p class="text-neutral-400">3.55M</p>
+				<p class="text-neutral-400 font-semibold text-sm">Avg Vol</p>
+				<p class="text-neutral-200">3.55M</p>
 			</div>
 		</div>
 		<div class="flex flex-col">
 			<div class="flex items-center space-x-4">
-				<p class="text-neutral-200 font-semibold text-sm">P/E Ratio</p>
-				<p class="text-neutral-400">-</p>
+				<p class="text-neutral-400 font-semibold text-sm">P/E Ratio</p>
+				<p class="text-neutral-200">-</p>
 			</div>
 			<div class="flex items-center space-x-4">
-				<p class="text-neutral-200 font-semibold text-sm">Div Yield</p>
-				<p class="text-neutral-400">-</p>
+				<p class="text-neutral-400 font-semibold text-sm">Div Yield</p>
+				<p class="text-neutral-200">-</p>
 			</div>
 		</div>
 	</section>

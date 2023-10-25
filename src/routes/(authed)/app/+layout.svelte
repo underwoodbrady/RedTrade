@@ -25,7 +25,7 @@
 		}}
 	/>
 	<section class="bg-neutral-800">
-		{#if $currentPage == 'app' || $currentPage == 'community'}
+		{#if $currentPage == 'app'}
 			<header
 				class="flex items-center z-30 px-12 justify-between pt-6 pb-4 bg-neutral-800 fixed left-20 top-0 w-[calc(100%-80px)]"
 			>
@@ -56,6 +56,10 @@
 				<main class="ml-[288px]">
 					<slot />
 				</main>
+		{:else}
+			<main class="ml-20">
+				<slot />
+			</main>
 		{/if}
 
 
