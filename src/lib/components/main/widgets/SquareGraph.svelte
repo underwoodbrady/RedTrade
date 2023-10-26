@@ -15,5 +15,5 @@
             <img src="/chevron.svg" alt="Down Icon" class="h-4" />
         </div>
     </div>
-    <img src="/square-graph.png" alt="Mock graph" class=" absolute left-5 bottom-5 w-[290px]"/>
+    <img src="/square-graph2.png" alt="Mock graph" class=" absolute left-5 bottom-5 w-[290px]"/>
 </WidgetSquare>

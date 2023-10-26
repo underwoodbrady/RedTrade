@@ -12,7 +12,10 @@
 	import LargestLoses from '$lib/components/main/widgets/XLargestLoses.svelte';
 	import Accounts from '$lib/components/main/widgets/Accounts.svelte';
 	import AssetMix from '$lib/components/main/widgets/AssetMix.svelte';
-	import XMultiSmallGraph from '$lib/components/main/widgets/XMultiSmallGraph.svelte';
+	import MultiSmallGraph from '$lib/components/main/widgets/MultiSmallGraph.svelte';
+	import XNetWorth from '$lib/components/main/widgets/XNetWorth.svelte';
+	import XCreditTracking from '$lib/components/main/widgets/XCreditTracking.svelte';
+	import XRecentTrades from '$lib/components/main/widgets/XRecentTrades.svelte';
 </script>
 
 <section class="grid small-grid gap-6 text-white text-lg px-12 py-4 min-h-screen min-w-0">
@@ -47,7 +50,10 @@
 	<SquareGraph />
 	<Accounts />
 	<AssetMix />
-	<XMultiSmallGraph />
+	<MultiSmallGraph />
+	<XNetWorth/>
+	<XCreditTracking/>
+	<XRecentTrades/>
 </section>
 
 <style>
