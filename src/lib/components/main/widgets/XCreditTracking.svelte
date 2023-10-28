@@ -12,7 +12,7 @@
 	<section class="mx-auto">
         <div class="w-44 h-44 rounded-full p-[2px] overflow-hidden">
             <div
-                class="bg-gradient-to-tr from-red-500 via-amber-500 to-green-500 w-full h-full rounded-full flex items-center justify-center"
+                class="bg-gradient-to-tr from-red-500 via-yellow-500 to-green-500 w-full h-full rounded-full flex items-center justify-center"
             >
                 <div class="relative rounded-full w-36 h-36 bg-[#303030] flex justify-center items-center">
                     <img src="/cover.svg" alt="Cover" class="absolute left-12 top-8 w-44 h-44" />
