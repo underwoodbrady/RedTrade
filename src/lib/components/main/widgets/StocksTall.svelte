@@ -50,7 +50,7 @@
 	</div>
     <table class="w-full border-collapse border-spacing-y-2 mb-auto mt-3">
         <thead>
-            <tr class="text-left text-sm font-medium text-neutral-400 h-10">
+            <tr class="text-left text-sm font-semibold text-neutral-400 h-10">
                 <th>Ticker</th>
                 <th>Name</th>
                 <th class="text-right">Last</th>
@@ -58,7 +58,7 @@
             </tr>
         </thead>
         <tbody class="text-sm">
-            {#each stocks as stock}
+            {#each stocks as stock (stock.ticker)}
                 <tr class="text-left border-b border-neutral-600 h-9">
                     <td>
                         <p class="text-neutral-400 text-sm">{stock.ticker}</p>
