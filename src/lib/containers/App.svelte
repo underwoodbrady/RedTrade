@@ -13,9 +13,12 @@
 	import Accounts from '$lib/components/main/widgets/Accounts.svelte';
 	import AssetMix from '$lib/components/main/widgets/AssetMix.svelte';
 	import MultiSmallGraph from '$lib/components/main/widgets/MultiSmallGraph.svelte';
-	import XNetWorth from '$lib/components/main/widgets/XNetWorth.svelte';
+	import NetWorth from '$lib/components/main/widgets/NetWorth.svelte';
 	import XCreditTracking from '$lib/components/main/widgets/XCreditTracking.svelte';
-	import XRecentTrades from '$lib/components/main/widgets/XRecentTrades.svelte';
+	import RecentTrades from '$lib/components/main/widgets/RecentTrades.svelte';
+	import XStockAllInOne from '$lib/components/main/widgets/XStockAllInOne.svelte';
+	import XLoanPayments from '$lib/components/main/widgets/XLoanPayments.svelte';
+	import XFinancialAnalysis from '$lib/components/main/widgets/XFinancialAnalysis.svelte';
 </script>
 
 <section class="grid small-grid gap-6 text-white text-lg px-12 py-4 min-h-screen min-w-0">
@@ -51,9 +54,12 @@
 	<Accounts />
 	<AssetMix />
 	<MultiSmallGraph />
-	<XNetWorth/>
+	<NetWorth/>
 	<XCreditTracking/>
-	<XRecentTrades/>
+	<RecentTrades/>
+	<XStockAllInOne/>
+	<XFinancialAnalysis/>
+	<XLoanPayments/>
 </section>
 
 <style>

@@ -3,7 +3,7 @@ import { writable } from 'svelte/store';
 export type pages = 'app' | 'settings' | 'community';
 
 export type dashboards = 'demo' | 'day trading' | 'long term' | 'research'; // Hook up to database for real profile data
-/** Should NOT be needed once its a real site */
+/** Should not be needed once its a real site */
 
 export type settings =
 | 'display'

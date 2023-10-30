@@ -23,6 +23,20 @@
 			shares: 40,
 			change: '1.02'
 		},
+		{
+			type: 'BUY',
+			ticker: 'AMZN',
+			amount: '400',
+			shares: 1,
+			change: '-2.02'
+		},
+		{
+			type: 'SELL',
+			ticker: 'AMC',
+			amount: '100',
+			shares: 10,
+			change: '-4.5'
+		},
 	];
 </script>
 
@@ -43,7 +57,7 @@
 			</tr>
 		</thead>
 		<tbody class="text-sm">
-			{#each trades as trade (trade.ticker)}
+			{#each trades as trade}
 				<tr class="text-left border-b border-neutral-600 h-9">
 					<td>
 						<p class="font-semibold mr-1">
