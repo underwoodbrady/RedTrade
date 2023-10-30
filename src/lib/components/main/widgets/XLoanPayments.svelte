@@ -21,7 +21,7 @@
             <h5 class="font-semibold"><span class="text-neutral-400 font-normal">Auto |</span>  Hyundai Kona</h5>
             <div class="relative w-8 h-8">
                 <img src="/loan-circle.svg" alt="Loan Circle Bro" class="w-full h-full"/>
-                <p class="text-[10px] absolute left-[18px] -translate-x-1/2 top-1/2 -translate-y-1/2 font-bold text-green-500">85%</p>
+                <p class="text-[10px] absolute left-[18px] -translate-x-1/2 top-1/2 -translate-y-1/2 font-bold text-green-500">67%</p>
             </div>
         </div>
 		<img src="/kona.png" alt="Hyundai Kona" class="w-full mt-2" />

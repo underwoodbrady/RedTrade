@@ -54,12 +54,20 @@
 	<Accounts />
 	<AssetMix />
 	<MultiSmallGraph />
-	<NetWorth/>
-	<XCreditTracking/>
-	<RecentTrades/>
-	<XStockAllInOne/>
-	<XFinancialAnalysis/>
-	<XLoanPayments/>
+	<NetWorth />
+	<XCreditTracking />
+	<RecentTrades />
+	<XFinancialAnalysis />
+	<XLoanPayments />
+	<XStockAllInOne
+		symbol="GME"
+		tradePrice="23.12"
+		highPrice="24.99"
+		lowPrice="19.60"
+		openPrice="20.01"
+		closePrice="23.12"
+		last24HourChange="1.2"
+	/>
 </section>
 
 <style>
