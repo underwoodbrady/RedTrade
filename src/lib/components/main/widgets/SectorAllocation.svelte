@@ -17,7 +17,7 @@
             <p>Consumer</p>
         </div>
         <div class="flex items-center space-x-1">
-            <div class="w-2 h-2 bg-green-500 rounded-full mt-[2px]"></div>
+            <div class="w-2 h-2 bg-emerald-500 rounded-full mt-[2px]"></div>
             <p>House+Auto</p>
         </div>
         <div class="flex items-center space-x-1">

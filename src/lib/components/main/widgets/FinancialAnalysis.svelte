@@ -35,12 +35,12 @@
 				</div>
 			</div>
 			<div class="flex items-center space-x-2">
-				<div class="relative w-10 bg-indigo-500 h-10 rounded-md flex items-center justify-center">
+				<div class="relative w-10 bg-pink-500 h-10 rounded-md flex items-center justify-center">
 					<img src="/shopping-bag.svg" alt="piggy bank" class="h-5" />
 					<h5 class="absolute left-0 -top-7 font-semibold text-neutral-200 text-sm">Lifestyle</h5>
 				</div>
 				<div class="w-56 flex flex-col space-y-2 text-xs">
-					<div class="relative w-8/12 h-2 bg-indigo-500 rounded-sm">
+					<div class="relative w-8/12 h-2 bg-pink-500 rounded-sm">
 						<p class="absolute -top-5 right-2">
 							This Month: <span class="font-semibold">$240</span>
 						</p>
@@ -73,12 +73,12 @@
 		</div>
 		<div class="flex flex-col items-center space-y-10">
 			<div class="flex items-center space-x-2">
-				<div class="relative w-10 bg-emerald-500 h-10 rounded-md flex items-center justify-center">
+				<div class="relative w-10 bg-indigo-500 h-10 rounded-md flex items-center justify-center">
 					<img src="/piggy-bank-white.svg" alt="piggy bank" class="h-5" />
 					<h5 class="absolute left-0 -top-7 font-semibold text-neutral-200 text-sm">Savings</h5>
 				</div>
 				<div class="w-56 flex flex-col space-y-2 text-xs">
-					<div class="relative w-full h-2 bg-emerald-500 rounded-sm">
+					<div class="relative w-full h-2 bg-indigo-500 rounded-sm">
 						<p class="absolute -top-5 right-2">
 							This Month: <span class="font-semibold">$540</span>
 						</p>
@@ -91,12 +91,12 @@
 				</div>
 			</div>
 			<div class="flex items-center space-x-2">
-				<div class="relative w-10 bg-emerald-500 h-10 rounded-md flex items-center justify-center">
+				<div class="relative w-10 bg-green-500 h-10 rounded-md flex items-center justify-center">
 					<img src="/shopping-bag.svg" alt="piggy bank" class="h-5" />
 					<h5 class="absolute left-0 -top-7 font-semibold text-neutral-200 text-sm">Lifestyle</h5>
 				</div>
 				<div class="w-56 flex flex-col space-y-2 text-xs">
-					<div class="relative w-8/12 h-2 bg-emerald-500 rounded-sm">
+					<div class="relative w-8/12 h-2 bg-green-500 rounded-sm">
 						<p class="absolute -top-5 right-2">
 							This Month: <span class="font-semibold">$240</span>
 						</p>
@@ -109,12 +109,12 @@
 				</div>
 			</div>
 			<div class="flex items-center space-x-2">
-				<div class="relative w-10 bg-emerald-500 h-10 rounded-md flex items-center justify-center">
+				<div class="relative w-10 bg-indigo-500 h-10 rounded-md flex items-center justify-center">
 					<img src="/invest.svg" alt="piggy bank" class="h-5" />
 					<h5 class="absolute left-0 -top-7 font-semibold text-neutral-200 text-sm">Investing</h5>
 				</div>
 				<div class="w-56 flex flex-col space-y-2 text-xs">
-					<div class="relative w-full h-2 bg-emerald-500 rounded-sm">
+					<div class="relative w-full h-2 bg-indigo-500 rounded-sm">
 						<p class="absolute -top-5 right-2">
 							This Month: <span class="font-semibold">$540</span>
 						</p>

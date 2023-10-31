@@ -34,7 +34,7 @@
 			class="text-left flex justify-between items-center border-b border-neutral-600 py-3 rounded-t-md hover:bg-neutral-700 px-2 -mx-2 duration-75"
 		>
 			<div class="flex items-center space-x-4">
-				<div class="w-9 h-9 rounded-md bg-green-600 flex items-center justify-center">
+				<div class="w-9 h-9 rounded-md bg-indigo-500 flex items-center justify-center">
 					<img src="/piggy-bank-white.svg" alt="piggy bank" class="h-5" />
 				</div>
 				<div>
@@ -48,7 +48,7 @@
 			class="text-left flex justify-between items-center border-b border-neutral-600 py-3 hover:bg-neutral-700 px-2 -mx-2 duration-75"
 		>
 			<div class="flex items-center space-x-4">
-				<div class="w-9 h-9 rounded-md bg-rose-600 flex items-center justify-center">
+				<div class="w-9 h-9 rounded-md bg-green-500 flex items-center justify-center">
 					<img src="/invest.svg" alt="piggy bank" class="h-5" />
 				</div>
 				<div>

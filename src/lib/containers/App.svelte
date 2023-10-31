@@ -17,61 +17,74 @@
 	import XCreditTracking from '$lib/components/main/widgets/XCreditTracking.svelte';
 	import RecentTrades from '$lib/components/main/widgets/RecentTrades.svelte';
 	import XStockAllInOne from '$lib/components/main/widgets/XStockAllInOne.svelte';
-	import XLoanPayments from '$lib/components/main/widgets/XLoanPayments.svelte';
-	import XFinancialAnalysis from '$lib/components/main/widgets/XFinancialAnalysis.svelte';
+	import LoanPayments from '$lib/components/main/widgets/LoanPayments.svelte';
+	import FinancialAnalysis from '$lib/components/main/widgets/FinancialAnalysis.svelte';
+	import type { dashboard } from '../../routes/(authed)/app/pages';
+	import XRecentActivity from '$lib/components/main/widgets/XRecentActivity.svelte';
+	import XCashFlow from '$lib/components/main/widgets/XCashFlow.svelte';
+	import XBudgeting from '$lib/components/main/widgets/XBudgeting.svelte';
+
+	export let dashboard: dashboard;
 </script>
 
 <section class="grid small-grid gap-6 text-white text-lg px-12 py-4 min-h-screen min-w-0">
-	<Clock />
-	<Summary />
-	<SingleStock
-		symbol="GME"
-		tradePrice="23.12"
-		highPrice="24.99"
-		lowPrice="19.60"
-		openPrice="20.01"
-		closePrice="23.12"
-		last24HourChange="1.2"
-	/>
-	<StocksTall />
-	<SectorAllocation />
-	<SquareGraph />
-	<SingleStock
-		symbol="AMC"
-		tradePrice="5.56"
-		highPrice="6.51"
-		lowPrice="4.90"
-		openPrice="6.51"
-		closePrice="5.56"
-		last24HourChange="-3.6"
-	/>
-	<SingleStockAdditional symbol="GME" />
-	<RelevantNews />
-	<WideGraph />
-	<LargestGains />
-	<LargestLoses />
-	<SquareGraph />
-	<Accounts />
-	<AssetMix />
-	<MultiSmallGraph />
-	<NetWorth />
-	<XCreditTracking />
-	<RecentTrades />
-	<XFinancialAnalysis />
-	<XLoanPayments />
-	<XStockAllInOne
-		symbol="GME"
-		tradePrice="23.12"
-		highPrice="24.99"
-		lowPrice="19.60"
-		openPrice="20.01"
-		closePrice="23.12"
-		last24HourChange="1.2"
-	/>
+	{#each dashboard.widgetList as widget}
+		{#if widget.name == 'accounts-paired'}
+			<Accounts />
+		{:else if widget.name == 'asset-mix'}
+			<AssetMix />
+		{:else if widget.name == 'budgeting'}
+			<XBudgeting/>
+		{:else if widget.name == 'cash-flow'}
+			<XCashFlow/>
+		{:else if widget.name == 'clock'}
+			<Clock />
+		{:else if widget.name == 'credit-tracking'}
+			<XCreditTracking />
+		{:else if widget.name == 'financial-analysis'}
+			<FinancialAnalysis />
+		{:else if widget.name == 'goal-planning'}
+			<span />
+		{:else if widget.name == 'list-of-stocks'}
+			<StocksTall />
+		{:else if widget.name == 'loan-payments'}
+			<LoanPayments />
+		{:else if widget.name == 'market-movers'}
+			<LargestGains />
+		{:else if widget.name == 'multi-small-graphs'}
+			<MultiSmallGraph />
+		{:else if widget.name == 'net-worth'}
+			<NetWorth />
+		{:else if widget.name == 'portfolio-summary'}
+			<Summary />
+		{:else if widget.name == 'primary-asset-list'}
+			<span />
+		{:else if widget.name == 'recent-activity'}
+			<XRecentActivity/>
+		{:else if widget.name == 'recent-trades'}
+			<RecentTrades />
+		{:else if widget.name == 'relevant-news'}
+			<RelevantNews />
+		{:else if widget.name == 'retirement'}
+			<span />
+		{:else if widget.name == 'sector-allocation'}
+			<SectorAllocation />
+		{:else if widget.name == 'single-stock'}
+			<SingleStock {...widget.params} />
+		{:else if widget.name == 'single-stock-additional'}
+			<SingleStockAdditional {...widget.params} />
+		{:else if widget.name == 'single-stock-allin'}
+			<XStockAllInOne {...widget.params} />
+		{:else if widget.name == 'square-graph'}
+			<SquareGraph />
+		{:else if widget.name == 'wide-graph'}
+			<WideGraph />
+		{/if}
+	{/each}
 </section>
 
 <style>
 	.small-grid {
-		grid-template-columns: repeat(3, min-content);
+		grid-template-columns: repeat(3, 320px); /**FIX - Don't hard set 320px*/
 	}
 </style>

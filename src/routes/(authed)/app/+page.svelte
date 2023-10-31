@@ -4,8 +4,7 @@
 	import Settings from "$lib/containers/Settings.svelte";
 	import Community from "$lib/containers/Community.svelte";
 
-	import { currentPage } from "./pages";
-	import type {pages} from "./pages"
+	import { currentPage, currentDashboard, type dashboard, type pages } from "./pages";
 
 	let selectedPage:pages = $currentPage;
 
@@ -16,11 +15,9 @@
 </script>
 
 {#if selectedPage == 'app'}
-	<App/>
+	<App dashboard = {$currentDashboard}/>
 {:else if selectedPage == 'settings'}
 	<Settings/>
 {:else if selectedPage == 'community'}
 	<Community/>
-{:else}
-	<App/>
 {/if}

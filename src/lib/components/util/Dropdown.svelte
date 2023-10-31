@@ -1,6 +1,9 @@
 <script lang="ts">
+	import type { dashboard } from '../../../routes/(authed)/app/pages';
+
 	export let dropDownOpen: boolean = false;
-	export let itemSelected: (item: string) => void;
+	export let itemSelected: (item: number) => void;
+	export let items: dashboard[];
 </script>
 
 <button
@@ -18,38 +21,26 @@
 			class="absolute top-full -left-4 bg-neutral-700 w-full py-2 px-2 rounded-tr-none rounded-tl-none rounded-br-md rounded-bl-md drop-shadow-sm"
 		>
 			<ul class="flex flex-col">
-				<li
-					class="py-2 px-4 my-1 hover:bg-neutral-600 rounded-md w-full"
-				>
-					<button on:click={() => itemSelected('demo')} class = " text-left flex items-center space-x-2">
-						<img src="/graph-up.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
-						<p class="text-neutral-200 text-sm font-semibold">Day Trading</p>
-					</button>
-				</li>
-				<li
-					class="py-2 px-4 my-1 hover:bg-neutral-600 rounded-md w-full text-left flex items-center space-x-2"
-				>
-					<button on:click={() => itemSelected('day trading')} class = " text-left flex items-center space-x-2">
-						<img src="/coins.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
-						<p class="text-neutral-200 text-sm font-semibold">Short Term</p>
-					</button>
-				</li>
-				<li
-					class="py-2 px-4 my-1 hover:bg-neutral-600 rounded-md w-full text-left flex items-center space-x-2"
-				>
-					<button on:click={() => itemSelected('long term')} class = " text-left flex items-center space-x-2">
-						<img src="/piggy-bank.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
-						<p class="text-neutral-200 text-sm font-semibold">Long Term</p>
-					</button>
-				</li>
-				<li
-					class="py-2 px-4 my-1 hover:bg-neutral-600 rounded-md w-full text-left flex items-center space-x-2"
-				>
-					<button on:click={() => itemSelected('research')} class = " text-left flex items-center space-x-2">
-						<img src="/beaker.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
-						<p class="text-neutral-200 text-sm font-semibold">Testing</p>
-					</button>
-				</li>
+				{#each items as item, num}
+					<li class="py-2 px-4 my-1 hover:bg-neutral-600 rounded-md w-full">
+						<button
+							on:click={() => itemSelected(num)}
+							class=" text-left flex items-center space-x-2"
+						>
+							{#if num == 0}
+								<!--This is terrible fix please-->
+								<img src="/graph-up.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
+							{:else if num == 1}
+								<img src="/coins.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
+							{:else if num == 2}
+								<img src="/piggy-bank.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
+							{:else}
+								<img src="/beaker.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
+							{/if}
+							<p class="text-neutral-200 text-sm font-semibold">{item.name}</p>
+						</button>
+					</li>
+				{/each}
 				<li
 					class="h-9 my-1 hover:bg-neutral-600 rounded-md w-full flex items-center justify-center bg-neutral-600 hover:border-2 border-neutral-500"
 				>
