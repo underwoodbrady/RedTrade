@@ -67,7 +67,7 @@
                     <p class="text-neutral-200">${closePrice}</p>
                 </div>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col mr-8">
                 <div class="flex items-center space-x-4">
                     <p class="text-neutral-400 font-semibold text-sm">High</p>
                     <p class="text-neutral-200">${highPrice}</p>
@@ -76,15 +76,6 @@
                     <p class="text-neutral-400 font-semibold text-sm">Low</p>
                     <p class="text-neutral-200">${lowPrice}</p>
                 </div>
-            </div>
-            <div class="relative flex flex-col items-center ml-2">
-                <img src="/color-scale.svg" alt="Color Scale" class="h-10 rounded-full mb-1" />
-                <p class="text-xs font-semibold text-neutral-400 -mb-4">Low</p>
-                <img
-                    src="/arrow-left.svg"
-                    alt="White Arrow Ticker"
-                    class="absolute left-[2px] top-2 h-2 rotate-180"
-                />
             </div>
         </div>
         <div class="text-base flex items-center space-x-10">
