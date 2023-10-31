@@ -46,13 +46,14 @@
 			</div>
 		</div>
         <div class="flex items-center justify-between text-sm font-semibold text-neutral-200 -mb-3">
-            <p class="rounded-md bg-neutral-700 px-2 py-[2px]">1D</p>
-            <p class="rounded-md px-2 py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">1W</p>
-            <p class="rounded-md px-2 py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">1M</p>
-            <p class="rounded-md px-2 py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">3M</p>
-            <p class="rounded-md px-2 py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">6M</p>
-            <p class="rounded-md px-2 py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">YTD</p>
-            <p class="rounded-md px-2 py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">1Y</p>
+            <p class="rounded-md bg-neutral-700 px-[5px] py-[2px]">1D</p>
+            <p class="rounded-md px-[5px] py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">1W</p>
+            <p class="rounded-md px-[5px] py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">2W</p>
+            <p class="rounded-md px-[5px] py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">1M</p>
+            <p class="rounded-md px-[5px] py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">3M</p>
+            <p class="rounded-md px-[5px] py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">6M</p>
+            <p class="rounded-md px-[5px] py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">YTD</p>
+            <p class="rounded-md px-[5px] py-[2px] hover:bg-neutral-700 duration-75 cursor-pointer">1Y</p>
         </div>
         <img src="/graph-condensed.svg" alt="Graph of Stock"/>
         <div class="flex items-center justify-between text-base">

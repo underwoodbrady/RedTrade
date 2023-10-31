@@ -15,9 +15,9 @@
 		</p>
 		<button
 			class="px-4 py-2 text-white border-white border font-semibold rounded-md w-64 text-left flex items-center justify-between drop-shadow-md mb-4"
-			>Send Me An Email <img src="/arrow-right-white.svg" alt="arrow-right" class="h-5" />
+			>Send Us An Email <img src="/arrow-right-white.svg" alt="arrow-right" class="h-5" />
 		</button>
-		<p class="text-neutral-400 text-sm mb-5">(if you think it's my fault)</p>
+		<p class="text-neutral-400 text-sm mb-5">(if you think it's our fault)</p>
 		<p class="text-white">Or <a href="/" class="text-brand underline font-semibold">Go Home</a></p>
 	</div>
 </main>

@@ -1,5 +1,29 @@
 <script lang="ts">
+	import { onDestroy, onMount } from 'svelte';
 	import Widget from '../Widget.svelte';
+	
+	const formatTime = (hours:number, minutes:number):string =>{
+		if (hours>12) hours = hours-12;
+		if (minutes<10) return `${hours}:0${minutes}`;
+		return `${hours}:${minutes}`
+	}
+
+	let date = new Date();
+	let time:string, seconds:number;
+	let interval : ReturnType<typeof setInterval>;
+
+	$: time = formatTime(date.getHours(),date.getMinutes())
+	$: seconds = date.getSeconds()
+
+	onMount(()=>{
+		interval = setInterval(() => {
+            date = new Date();
+        }, 1000);
+	})
+
+    onDestroy(() => {
+        clearInterval(interval);
+    });
 </script>
 
 <Widget>
@@ -15,8 +39,8 @@
 		</div>
 	</div>
 	<div class="flex items-baseline space-x-2">
-		<h2 class="text-6xl font-bold tracking-wide">12:31</h2>
-		<p class="font-semibold">45</p>
+		<h2 class="text-6xl font-bold tracking-wide">{time}</h2>
+		<p class="font-semibold">{seconds}</p>
 	</div>
 	<div>
 		<p class="text-neutral-400 font-normal">Friday October 6th</p>

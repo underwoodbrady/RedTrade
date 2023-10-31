@@ -23,7 +23,7 @@
 				>
 					<button on:click={() => itemSelected('demo')} class = " text-left flex items-center space-x-2">
 						<img src="/graph-up.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
-						<p class="text-neutral-200 text-sm font-semibold">Demo</p>
+						<p class="text-neutral-200 text-sm font-semibold">Day Trading</p>
 					</button>
 				</li>
 				<li
@@ -31,7 +31,7 @@
 				>
 					<button on:click={() => itemSelected('day trading')} class = " text-left flex items-center space-x-2">
 						<img src="/coins.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
-						<p class="text-neutral-200 text-sm font-semibold">Day Trading</p>
+						<p class="text-neutral-200 text-sm font-semibold">Short Term</p>
 					</button>
 				</li>
 				<li
@@ -47,7 +47,7 @@
 				>
 					<button on:click={() => itemSelected('research')} class = " text-left flex items-center space-x-2">
 						<img src="/beaker.svg" alt="Beaker Icon" class="h-3 mt-[1px]" />
-						<p class="text-neutral-200 text-sm font-semibold">Research</p>
+						<p class="text-neutral-200 text-sm font-semibold">Testing</p>
 					</button>
 				</li>
 				<li
