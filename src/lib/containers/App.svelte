@@ -28,7 +28,7 @@
 </script>
 
 <section class="grid small-grid gap-6 text-white text-lg px-12 py-4 min-h-screen min-w-0">
-	{#each dashboard.widgetList as widget}
+	{#each dashboard.widgetList as widget (widget.id)}
 		{#if widget.name == 'accounts-paired'}
 			<Accounts />
 		{:else if widget.name == 'asset-mix'}

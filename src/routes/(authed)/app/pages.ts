@@ -8,6 +8,7 @@ export type widgetTypes = 'clock' | 'relevant-news' | 'sector-allocation' | 'sin
 
 export type widget = {
     name: widgetTypes,
+    id:number
     params?: {};
 }
 
