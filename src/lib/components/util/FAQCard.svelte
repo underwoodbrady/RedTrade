@@ -5,20 +5,18 @@
 	export let openedOnce: boolean = false; //Probably dumb solution but whatever
 </script>
 
-<div
+<button
+	on:click={() => {
+		opened = !opened;
+		openedOnce = true;
+	}}
 	class={!openedOnce
 		? 'text-neutral-200 bg-darker/90 w-full rounded-md drop-shadow-md flex flex-col px-10 py-8 cursor-pointer'
 		: opened
 		? 'open-anim text-neutral-200 bg-darker/90 w-full rounded-md drop-shadow-md flex flex-col px-10 py-8 cursor-pointer'
 		: 'close-anim text-neutral-200 bg-darker/90 w-full rounded-md drop-shadow-md flex flex-col px-10 py-8 cursor-pointer'}
 >
-	<button
-		on:click={() => {
-			opened = !opened;
-			openedOnce = true;
-		}}
-		class="relative flex justify-left w-full"
-	>
+	<div class="relative flex justify-left w-full">
 		<h4 class=" text-2xl font-semibold">{question}</h4>
 		{#if opened && openedOnce}
 			<img
@@ -30,7 +28,7 @@
 		{:else}
 			<img src="/plus-white.svg" alt="Plus Icon" class="absolute w-9 right-0 top-0" />
 		{/if}
-	</button>
+	</div>
 
 	<div
 		class={!openedOnce
@@ -41,7 +39,7 @@
 	>
 		<p class="text-white text-xl">{answer}</p>
 	</div>
-</div>
+</button>
 
 <style>
 	.open-anim {

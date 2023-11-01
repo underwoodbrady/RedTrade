@@ -15,9 +15,9 @@
 			<img src="./settings-hollow.svg" alt="Graduate" class="h-3 mt-[1px]" />
 			<p class="">Settings</p>
 		</div>
-		<div class="flex items-center py-2 px-3 my-1 hover:bg-[#484848] rounded-md space-x-2">
+		<button on:click={onPressLogout} class="flex items-center py-2 px-3 my-1 hover:bg-[#484848] rounded-md space-x-2">
 			<img src="/logout.svg" alt="Automation" class="h-3" />
-			<button on:click={onPressLogout} class="font-semibold">Logout</button>
-		</div>
+			<p  class="font-semibold">Logout</p>
+		</button>
 	</div>
 </div>

@@ -132,7 +132,7 @@
 	onMount(() => {
 		if($currentUser != null){
 			dashboards = [dayTradingDashboard, shortTermDashboard, longTermDashboard, testingDashboard]
-			currentDashboard.set(shortTermDashboard)
+			currentDashboard.set(dashboards[0])
 		}
 	});
 

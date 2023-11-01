@@ -22,10 +22,10 @@
 		>
 			<ul class="flex flex-col">
 				{#each items as item, num}
-					<li class="py-2 px-4 my-1 hover:bg-neutral-600 rounded-md w-full">
+					<li class="my-1 hover:bg-neutral-600 rounded-md">
 						<button
 							on:click={() => itemSelected(num)}
-							class=" text-left flex items-center space-x-2"
+							class=" text-left flex items-center space-x-2 py-2 px-4 w-full"
 						>
 							{#if num == 0}
 								<!--This is terrible fix please-->

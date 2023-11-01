@@ -35,18 +35,18 @@
 						class="absolute top-14 left-0 rounded-md bg-neutral-800 border border-neutral-600 p-2 scale-0 group-hover:scale-100 transition-all origin-top text-neutral-400 flex flex-col w-[166px]"
 					>
 						<span class="absolute left-0 -top-4 h-4 w-full" />
-						<div class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">
+						<a href="/services/dashboard" class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">
 							<img src="./dashboard.svg" alt="Dashboard" class="h-6" />
-							<a href="/services/dashboard" class="font-semibold">Dashboard</a>
-						</div>
-						<div class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">
+							<p  class="font-semibold">Dashboard</p>
+						</a>
+						<a href="/services/learning" class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">
 							<img src="./graduate-cap.svg" alt="Graduate" class="h-6" />
-							<a href="/services/learning" class="font-semibold">Learning</a>
-						</div>
-						<div class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">
+							<p class="font-semibold">Learning</p>
+						</a>
+						<a href="/services/automation" class="flex items-center py-2 px-4 my-1 hover:bg-[#2d2d2d] rounded-md space-x-2">
 							<img src="./robot.svg" alt="Automation" class="h-5" />
-							<a href="/services/automation" class="font-semibold">Automation</a>
-						</div>
+							<p  class="font-semibold">Automation</p>
+						</a>
 					</div>
 				</li>
 				<li class="hover:text-neutral-300 py-2 px-3 cursor-pointer">
