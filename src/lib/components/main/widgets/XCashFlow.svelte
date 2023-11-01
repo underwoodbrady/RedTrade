@@ -82,21 +82,21 @@
                     <img src="/subscription.svg" alt="Auto Subscription" class="h-full"/>
                     <div class="flex flex-col ml-3">
                         <h6 class="text-sm font-semibold text-indigo-400">End Subscriptions</h6>
-                        <p class="text-xs text-indigo-200">8 Costing $250/mo</p>
+                        <p class="text-xs text-neutral-200">8 Costing $250/mo</p>
                     </div>
                 </div>
 				<div class="w-full h-[52px] rounded-md border-pink-400 border-2 mb-3 p-3 flex items-center">
                     <img src="/invest-pink.svg" class="h-full" alt="Invest"/>
                     <div class="flex flex-col ml-3">
                         <h6 class="text-sm font-semibold text-pink-400">Set Goals</h6>
-                        <p class="text-xs text-pink-200">Set budgetting goals</p>
+                        <p class="text-xs text-neutral-200">Set budgetting goals</p>
                     </div>
                 </div>
 				<div class="w-full h-[52px] rounded-md border-emerald-400 border-2 p-3 flex items-center">
                     <img src="/graph-emerald.svg" class="h-full" alt="Invest"/>
                     <div class="flex flex-col ml-3">
                         <h6 class="text-sm font-semibold text-emerald-400">Invest More</h6>
-                        <p class="text-xs text-emerald-200">20% out of each paycheck</p>
+                        <p class="text-xs text-neutral-200">20% out of each paycheck</p>
                     </div>
                 </div>
 			</div>
