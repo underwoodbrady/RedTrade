@@ -1,4 +1,7 @@
 <script lang="ts">
+
+	import { currentDashboard } from '../../routes/(authed)/app/pages';
+
 	import Clock from '$lib/components/main/widgets/Clock.svelte';
 	import SingleStock from '$lib/components/main/widgets/SingleStock.svelte';
 	import SquareGraph from '$lib/components/main/widgets/SquareGraph.svelte';
@@ -24,11 +27,11 @@
 	import XCashFlow from '$lib/components/main/widgets/XCashFlow.svelte';
 	import XBudgeting from '$lib/components/main/widgets/XBudgeting.svelte';
 
-	export let dashboard: dashboard;
 </script>
 
 <section class="grid small-grid gap-6 text-white text-lg px-12 py-4 min-h-screen min-w-0">
-	{#each dashboard.widgetList as widget (widget.id)}
+	{#if $currentDashboard.widgetList.length > 1}
+	{#each $currentDashboard.widgetList as widget (widget.id)}
 		{#if widget.name == 'accounts-paired'}
 			<Accounts />
 		{:else if widget.name == 'asset-mix'}
@@ -81,6 +84,13 @@
 			<WideGraph />
 		{/if}
 	{/each}
+	{:else}
+	<div class="mx-auto">
+		<h5 class="text-neutral-400 text-xl">Not currently signed in</h5>
+		<a href="/login" class="text-brand text-base underline font-semibold mx-auto">Sign in now</a>
+	</div>
+
+	{/if}
 </section>
 
 <style>

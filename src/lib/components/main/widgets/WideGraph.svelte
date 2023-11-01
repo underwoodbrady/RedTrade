@@ -7,7 +7,7 @@
 		<img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-4" />
 	</div>
 	<div class="flex items-center space-x-6">
-		<h4 class="font-semibold text-neutral-200">Multi-Graph</h4>
+		<h4 class="font-semibold text-neutral-200">Wide Graph</h4>
 		
             <div
                 class="relative rounded-full bg-neutral-700 w-24 py-1 px-4 flex justify-between items-center font-semibold"

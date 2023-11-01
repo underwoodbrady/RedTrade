@@ -1,3 +1,7 @@
+<script lang="ts">
+	export let onPressLogout:()=>void;
+</script>
+
 <div
 	class="group relative rounded-full bg-neutral-900 pl-4 pr-1 py-2 text-sm flex justify-between items-center space-x-8 hover:bg-[#353535] hover:border border-neutral-600 hover:-m-[1px] cursor-pointer"
 >
@@ -13,7 +17,7 @@
 		</div>
 		<div class="flex items-center py-2 px-3 my-1 hover:bg-[#484848] rounded-md space-x-2">
 			<img src="/logout.svg" alt="Automation" class="h-3" />
-			<a href="/" class="font-semibold">Logout</a>
+			<button on:click={onPressLogout} class="font-semibold">Logout</button>
 		</div>
 	</div>
 </div>

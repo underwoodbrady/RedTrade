@@ -6,8 +6,12 @@
 	<div class="absolute right-7 top-7">
 		<img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-4" />
 	</div>
-	<div class="flex items-center">
+	<div class="flex items-center space-x-6">
 		<h4 class="font-semibold text-neutral-200">Cash Flow</h4>
+		<div class="flex items-center bg-neutral-700 hover:bg-neutral-600 rounded-md py-1 px-2 space-x-2 cursor-pointer">
+            <p class="text-sm font-semibold text-neutral-300 ">See More</p>
+            <img src="/arrow-right-grey.svg" alt="Arrow to the right" class="h-2 mt-[1px]"/>
+        </div>
 	</div>
 	<section class="flex justify-between h-full mt-5">
 		<div class="w-1/3 h-full">

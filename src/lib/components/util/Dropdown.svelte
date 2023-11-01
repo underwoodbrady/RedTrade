@@ -3,7 +3,7 @@
 
 	export let dropDownOpen: boolean = false;
 	export let itemSelected: (item: number) => void;
-	export let items: dashboard[];
+	export let items: dashboard[] = [];
 </script>
 
 <button

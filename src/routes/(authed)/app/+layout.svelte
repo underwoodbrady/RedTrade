@@ -8,6 +8,7 @@
 	import { onMount } from 'svelte';
 
 	import { currentPage, currentSetting, currentDashboard, type dashboard } from './pages';
+	import { currentUser, pb } from '../pocketbase';
 
 	let testingDashboard: dashboard = {
 		name: 'Testing',
@@ -126,11 +127,19 @@
 		]
 	};
 
-	let dashboards = [dayTradingDashboard, shortTermDashboard, longTermDashboard, testingDashboard];
+	let dashboards:dashboard[];
 
 	onMount(() => {
-		currentDashboard.set(shortTermDashboard)
+		if($currentUser != null){
+			dashboards = [dayTradingDashboard, shortTermDashboard, longTermDashboard, testingDashboard]
+			currentDashboard.set(shortTermDashboard)
+		}
 	});
+
+	function userLoggedOut(){
+		pb.authStore.clear()
+		window.location.assign(`http://${window.location.host}/`);
+	}
 
 	//Can probably do some sort of svelte:fragment named slot nonsense
 </script>
@@ -166,7 +175,7 @@
 				<div class="flex items-center space-x-8">
 					<Search />
 					<Alert />
-					<ProfileCard />
+					<ProfileCard onPressLogout={()=>{userLoggedOut()}} />
 				</div>
 			</header>
 			<main class="ml-20 pt-[84px]">
