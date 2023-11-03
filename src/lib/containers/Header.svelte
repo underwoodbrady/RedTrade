@@ -8,8 +8,8 @@
 		: 'w-full flex py-2 bg-brand justify-center text-neutral-800 hide-anim'}
 >
 	<p class="">
-		📈 Red Trade BETA is now live for testing. <span class="underline cursor-pointer"
-			>Sign Up Now!</span
+		📈 Red Trade BETA is now live for testing. <a href="/signup" class="underline cursor-pointer"
+			>Sign Up Now!</a
 		> 📈
 	</p>
 	<button

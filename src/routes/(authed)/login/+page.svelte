@@ -6,13 +6,22 @@
 	let password: string;
 	let loading: boolean;
 
-	let unsubscribe = currentUser.subscribe((val)=>{
-		if(val!=null){
+	let highlightUsername: boolean = false;
+	let highlightPassword: boolean = false;
+
+	let unsubscribe = currentUser.subscribe((val) => {
+		if (val != null) {
 			window.location.assign(`http://${window.location.host}/app`);
 		}
-	})
+	});
 
 	async function login() {
+		console.log(username, password)
+		highlightUsername = username == undefined;
+		highlightPassword = password == undefined;
+
+		if (username == undefined || password == undefined) return
+
 		try {
 			loading = true;
 			await pb.collection('users').authWithPassword(username, password);
@@ -26,9 +35,9 @@
 		}
 	}
 
-	onDestroy(()=>{
+	onDestroy(() => {
 		unsubscribe();
-	})
+	});
 </script>
 
 <main class="relative bg-[#2d2d2d] w-full min-h-screen flex items-center justify-center">
@@ -48,15 +57,17 @@
 				placeholder=""
 				type="text"
 				bind:value={username}
-				class="bg-[#232323] p-2 rounded-[4px] mb-4"
+				class={"bg-[#232323] p-2 rounded-[4px] " + (highlightUsername ? "border-brand border" : "mb-4")}
 			/>
+			{#if highlightUsername}<span class="text-xs text-brand mb-2 mt-1">Must enter a username</span>{/if}
 			<label for="password" class="text-neutral-300 font-semibold mb-2 text-md">Password</label>
 			<input
 				placeholder=""
 				type="password"
 				bind:value={password}
-				class="bg-[#232323] p-2 rounded-[4px] mb-4"
+				class={"bg-[#232323] p-2 rounded-[4px] " + (highlightPassword ? "border-brand border" : "mb-4")}
 			/>
+			{#if highlightPassword}<span class="text-xs text-brand mb-2 mt-1">Must enter a password</span>{/if}
 			<!--<button on:click={login}>Login</button>-->
 			<button
 				on:click={login}
