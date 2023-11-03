@@ -165,7 +165,7 @@
 	<Modal
 			title="You Are Not Logged In"
 			text="You are not currently logged in to a Red Trade account"
-			type="error"
+			type="warning"
 			actionText="Log In"
 			onPressAction={() => {
 				window.location.assign(`http://${window.location.host}/login`)

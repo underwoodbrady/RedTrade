@@ -28,7 +28,7 @@
 <div
 	class="fixed top-0 left-0 w-full h-full flex flex-wrap items-center justify-center z-50 fade-in-anim select-none"
 >
-	<div class="bg-[#303030] -translate-y-full rounded-md drop-shadow-md p-6 w-[480px] h-60 text-white space-x-5 flex drop-down-anim">
+	<div class="bg-[#303030] -translate-y-full rounded-md drop-shadow-md p-8 w-[480px] h-60 text-white space-x-5 flex drop-down-anim">
 		<div
 			class={'w-12 h-12 rounded-full p-3 ' +
 				(type == 'warning'

@@ -71,7 +71,7 @@
 			<!--<button on:click={login}>Login</button>-->
 			<button
 				on:click={login}
-				class="bg-brand text-[#303030] p-3 rounded-[4px] font-semibold mt-5 mb-3 text-center"
+				class="bg-brand text-[#303030] p-3 rounded-md font-semibold mt-5 mb-3 text-center"
 			>
 				{#if loading}
 					<img class="w-6 animate-spin mx-auto" src="/spinner.svg" alt="loading spinner" />
