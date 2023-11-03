@@ -9,12 +9,13 @@
 
 	import { currentPage, currentSetting, currentDashboard, type dashboard } from './pages';
 	import { currentUser, pb } from '../pocketbase';
+	import Modal from '$lib/components/util/Modal.svelte';
 
 	let testingDashboard: dashboard = {
 		name: 'Testing',
 		widgetList: [
-			{ name: 'clock', id:1},
-			{ name: 'portfolio-summary', id:2 },
+			{ name: 'clock', id: 1 },
+			{ name: 'portfolio-summary', id: 2 },
 			{
 				name: 'single-stock',
 				params: {
@@ -25,11 +26,12 @@
 					openPrice: '20.01',
 					closePrice: '23.12',
 					last24HourChange: '1.2'
-				}, id:3
+				},
+				id: 3
 			},
-			{ name: 'list-of-stocks' , id:4},
-			{ name: 'sector-allocation', id:5 },
-			{ name: 'square-graph' , id:6},
+			{ name: 'list-of-stocks', id: 4 },
+			{ name: 'sector-allocation', id: 5 },
+			{ name: 'square-graph', id: 6 },
 			{
 				name: 'single-stock',
 				params: {
@@ -40,23 +42,23 @@
 					openPrice: '6.51',
 					closePrice: '5.56',
 					last24HourChange: '-3.6'
-				}
-				, id:7
+				},
+				id: 7
 			},
-			{ name: 'single-stock-additional', params: { symbol: 'GME' }, id:8 },
-			{ name: 'relevant-news' , id:9},
-			{ name: 'wide-graph' , id:10},
-			{ name: 'market-movers' , id:11},
-			{ name: 'market-movers' , id:12},
-			{ name: 'square-graph' , id:13},
-			{ name: 'accounts-paired' , id:14},
-			{ name: 'asset-mix' , id:15},
-			{ name: 'multi-small-graphs' , id:16},
-			{ name: 'net-worth' , id:17},
-			{ name: 'credit-tracking' , id:18},
-			{ name: 'recent-trades' , id:19},
-			{ name: 'financial-analysis' , id:20},
-			{ name: 'loan-payments' , id:21},
+			{ name: 'single-stock-additional', params: { symbol: 'GME' }, id: 8 },
+			{ name: 'relevant-news', id: 9 },
+			{ name: 'wide-graph', id: 10 },
+			{ name: 'market-movers', id: 11 },
+			{ name: 'market-movers', id: 12 },
+			{ name: 'square-graph', id: 13 },
+			{ name: 'accounts-paired', id: 14 },
+			{ name: 'asset-mix', id: 15 },
+			{ name: 'multi-small-graphs', id: 16 },
+			{ name: 'net-worth', id: 17 },
+			{ name: 'credit-tracking', id: 18 },
+			{ name: 'recent-trades', id: 19 },
+			{ name: 'financial-analysis', id: 20 },
+			{ name: 'loan-payments', id: 21 },
 			{
 				name: 'single-stock-allin',
 				params: {
@@ -67,24 +69,25 @@
 					openPrice: '20.01',
 					closePrice: '23.12',
 					last24HourChange: '1.2'
-				}, id:47
+				},
+				id: 47
 			},
-			{name:'cash-flow', id:22},
-			{name:'budgeting', id:23},
-			{name:'recent-activity',id:24},
-			{name:'goal-planning',id:25}
+			{ name: 'cash-flow', id: 22 },
+			{ name: 'budgeting', id: 23 },
+			{ name: 'recent-activity', id: 24 },
+			{ name: 'goal-planning', id: 25 }
 		]
 	};
 
 	let dayTradingDashboard: dashboard = {
 		name: 'Day Trading',
 		widgetList: [
-			{ name: 'clock' ,id:26},
-			{ name: 'portfolio-summary',id:27 },
-			{ name: 'relevant-news',id:28 },
-			{ name: 'multi-small-graphs',id:29 }, //House
-			{ name: 'recent-trades',id:30 },
-			{ name: 'wide-graph',id:31 },
+			{ name: 'multi-small-graphs', id: 29 }, //House
+			{ name: 'relevant-news', id: 28 },
+			{ name: 'clock', id: 26 },
+			{ name: 'portfolio-summary', id: 27 },
+			{ name: 'recent-trades', id: 30 },
+			{ name: 'wide-graph', id: 31 },
 			{
 				name: 'single-stock-allin',
 				params: {
@@ -95,50 +98,59 @@
 					openPrice: '20.01',
 					closePrice: '23.12',
 					last24HourChange: '1.2'
-				}
-				,id:32
+				},
+				id: 32
 			},
-			{ name: 'list-of-stocks',id:33 },
-			{ name: 'market-movers',id:34 }
+			{ name: 'list-of-stocks', id: 33 },
+			{ name: 'market-movers', id: 34 }
 		]
 	};
 
 	let shortTermDashboard: dashboard = {
 		name: 'Short Term',
 		widgetList: [
-			{ name: 'recent-activity',id:35 },
-			{ name: 'cash-flow',id:36 },
-			{ name: 'sector-allocation',id:37 },
-			{ name: 'budgeting',id:38 },
-			{ name: 'credit-tracking',id:39 },
-			{ name: 'loan-payments',id:40 } //House
+			{ name: 'recent-activity', id: 35 },
+			{ name: 'cash-flow', id: 36 },
+			{ name: 'budgeting', id: 38 },
+			{ name: 'sector-allocation', id: 37 },
+			{ name: 'loan-payments', id: 40 }, //House
+			{ name: 'loan-payments', id: 48 }, //House
+			{ name: 'credit-tracking', id: 39 }
 		]
 	};
 
 	let longTermDashboard: dashboard = {
 		name: 'Long Term',
 		widgetList: [
-			{ name: 'net-worth',id:41 },
-			{ name: 'asset-mix',id:42 },
-			{ name: 'financial-analysis',id:43 },
-			{ name: 'loan-payments',id:44 }, //House
-			{ name: 'accounts-paired',id:45 },
-			{ name: 'goal-planning',id:46 }
+			{ name: 'net-worth', id: 41 },
+			{ name: 'asset-mix', id: 42 },
+			{ name: 'financial-analysis', id: 43 },
+			{ name: 'loan-payments', id: 44 }, //House
+			{ name: 'accounts-paired', id: 45 },
+			{ name: 'goal-planning', id: 46 }
 		]
 	};
 
-	let dashboards:dashboard[];
+	let dashboards: dashboard[];
+	let notLoggedIn: boolean = false;
 
 	onMount(() => {
-		if($currentUser != null){
-			dashboards = [dayTradingDashboard, shortTermDashboard, longTermDashboard, testingDashboard]
-			currentDashboard.set(dashboards[0])
+		if ($currentUser != null) {
+			dashboards = [dayTradingDashboard, shortTermDashboard, longTermDashboard, testingDashboard];
+			currentDashboard.set(dashboards[0]);
+		} else {
+			notLoggedIn = true;
 		}
 	});
 
-	function userLoggedOut(){
-		pb.authStore.clear()
+	function userLoggedOut() {
+		pb.authStore.clear();
 		window.location.assign(`http://${window.location.host}/`);
+	}
+
+	function goToUserSettings() {
+		currentSetting.set('personalinfo');
+		currentPage.set('settings');
 	}
 
 	//Can probably do some sort of svelte:fragment named slot nonsense
@@ -149,6 +161,17 @@
 </svelte:head>
 
 <div class="relative w-full h-full">
+	{#if notLoggedIn}
+	<Modal
+			title="You Are Not Logged In"
+			text="You are not currently logged in to a Red Trade account"
+			type="error"
+			actionText="Log In"
+			onPressAction={() => {
+				window.location.assign(`http://${window.location.host}/login`)
+			}}
+		/>
+	{/if}
 	<Sidebar
 		currentPage={$currentPage}
 		updateCurrentPage={(page) => {
@@ -175,7 +198,14 @@
 				<div class="flex items-center space-x-8">
 					<Search />
 					<Alert />
-					<ProfileCard onPressLogout={()=>{userLoggedOut()}} />
+					<ProfileCard
+						onPressLogout={() => {
+							userLoggedOut();
+						}}
+						onPressSettings={() => {
+							goToUserSettings();
+						}}
+					/>
 				</div>
 			</header>
 			<main class="ml-20 pt-[84px]">

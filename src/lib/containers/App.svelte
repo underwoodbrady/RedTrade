@@ -22,7 +22,6 @@
 	import XStockAllInOne from '$lib/components/main/widgets/XStockAllInOne.svelte';
 	import LoanPayments from '$lib/components/main/widgets/LoanPayments.svelte';
 	import FinancialAnalysis from '$lib/components/main/widgets/FinancialAnalysis.svelte';
-	import type { dashboard } from '../../routes/(authed)/app/pages';
 	import XRecentActivity from '$lib/components/main/widgets/XRecentActivity.svelte';
 	import XCashFlow from '$lib/components/main/widgets/XCashFlow.svelte';
 	import XBudgeting from '$lib/components/main/widgets/XBudgeting.svelte';
@@ -30,7 +29,6 @@
 </script>
 
 <section class="grid small-grid gap-6 text-white text-lg px-12 py-4 min-h-screen min-w-0">
-	{#if $currentDashboard.widgetList.length > 1}
 	{#each $currentDashboard.widgetList as widget (widget.id)}
 		{#if widget.name == 'accounts-paired'}
 			<Accounts />
@@ -84,13 +82,6 @@
 			<WideGraph />
 		{/if}
 	{/each}
-	{:else}
-	<div class="mx-auto">
-		<h5 class="text-neutral-400 text-xl">Not currently signed in</h5>
-		<a href="/login" class="text-brand text-base underline font-semibold mx-auto">Sign in now</a>
-	</div>
-
-	{/if}
 </section>
 
 <style>

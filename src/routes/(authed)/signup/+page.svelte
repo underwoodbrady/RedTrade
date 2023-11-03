@@ -1,15 +1,22 @@
 <script lang="ts">
-	import { pb } from '../pocketbase';
+	import { onDestroy } from 'svelte';
+	import { currentUser, pb } from '../pocketbase';
 
 	let email: string;
 	let username: string;
 	let password: string;
 	let loading: boolean;
 
+	let unsubscribe = currentUser.subscribe((val)=>{
+		if(val!=null){
+			window.location.assign(`http://${window.location.host}/app`);
+		}
+	})
+
 	async function login() {
 		try {
+	
 			await pb.collection('users').authWithPassword(username, password);
-			window.location.assign(`http://${window.location.host}/app`);
 		} catch (err) {
 			console.error(err);
 			alert(err);
@@ -25,7 +32,6 @@
 				password,
 				email,
 				passwordConfirm: password,
-				alerts: 'Welcome to [placeholder]!'
 			};
 			loading = true;
 			const createdUser = await pb.collection('users').create(data);
@@ -38,6 +44,10 @@
 			loading = false;
 		}
 	}
+
+	onDestroy(()=>{
+		unsubscribe();
+	})
 </script>
 
 <main class="relative bg-[#2d2d2d] w-full min-h-screen flex items-center justify-center">

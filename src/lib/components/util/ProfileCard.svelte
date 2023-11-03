@@ -1,5 +1,6 @@
 <script lang="ts">
 	export let onPressLogout:()=>void;
+	export let onPressSettings:()=>void;
 </script>
 
 <div
@@ -11,10 +12,10 @@
 		class="absolute top-12 -left-8 rounded-md bg-[#353535] p-2 scale-0 group-hover:scale-100 transition-all origin-top text-sm text-neutral-300 border border-neutral-600 flex flex-col w-full drop-shadow-sm"
 	>
 		<span class="absolute left-0 -top-4 h-4 w-full" />
-		<div class="flex items-center py-2 px-3 my-1 hover:bg-[#484848] rounded-md space-x-2">
+		<button on:click={onPressSettings} class="flex items-center py-2 px-3 my-1 hover:bg-[#484848] rounded-md space-x-2">
 			<img src="./settings-hollow.svg" alt="Graduate" class="h-3 mt-[1px]" />
 			<p class="">Settings</p>
-		</div>
+		</button>
 		<button on:click={onPressLogout} class="flex items-center py-2 px-3 my-1 hover:bg-[#484848] rounded-md space-x-2">
 			<img src="/logout.svg" alt="Automation" class="h-3" />
 			<p  class="font-semibold">Logout</p>

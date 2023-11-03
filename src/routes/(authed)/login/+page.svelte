@@ -1,9 +1,16 @@
 <script lang="ts">
-	import { pb } from '../pocketbase';
+	import { onDestroy } from 'svelte';
+	import { currentUser, pb } from '../pocketbase';
 
 	let username: string;
 	let password: string;
 	let loading: boolean;
+
+	let unsubscribe = currentUser.subscribe((val)=>{
+		if(val!=null){
+			window.location.assign(`http://${window.location.host}/app`);
+		}
+	})
 
 	async function login() {
 		try {
@@ -18,6 +25,10 @@
 			loading = false;
 		}
 	}
+
+	onDestroy(()=>{
+		unsubscribe();
+	})
 </script>
 
 <main class="relative bg-[#2d2d2d] w-full min-h-screen flex items-center justify-center">

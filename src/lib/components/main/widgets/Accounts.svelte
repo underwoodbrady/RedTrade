@@ -39,10 +39,10 @@
 				</div>
 				<div>
 					<h5 class="text-neutral-200 font-semibold text-base">Capital One</h5>
-					<h6 class="text-neutral-400 font-semibold text-sm">Savings</h6>
+					<h6 class="text-neutral-400 text-sm">Savings</h6>
 				</div>
 			</div>
-			<p class="">$2500<span class="text-xs">.60</span></p>
+			<p class="font-semibold">$2500<span class="text-xs">.60</span></p>
 		</button>
 		<button
 			class="text-left flex justify-between items-center border-b border-neutral-600 py-3 hover:bg-neutral-700 px-2 -mx-2 duration-75"
@@ -53,10 +53,10 @@
 				</div>
 				<div>
 					<h5 class="text-neutral-200 font-semibold text-base">Charles Schwab</h5>
-					<h6 class="text-neutral-400 font-semibold text-sm">Investment</h6>
+					<h6 class="text-neutral-400 text-sm">Investment</h6>
 				</div>
 			</div>
-			<p class="">$705<span class="text-xs">.08</span></p>
+			<p class="font-semibold">$705<span class="text-xs">.08</span></p>
 		</button>
 		<div
 			class="group w-full flex justify-center mt-3 text-neutral-400 hover:text-white py-2 hover:bg-neutral-700 rounded-md"
