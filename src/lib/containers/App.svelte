@@ -25,10 +25,12 @@
 	import XRecentActivity from '$lib/components/main/widgets/XRecentActivity.svelte';
 	import XCashFlow from '$lib/components/main/widgets/XCashFlow.svelte';
 	import XBudgeting from '$lib/components/main/widgets/XBudgeting.svelte';
+	import ZSquareGraph from '$lib/components/main/widgets/ZSquareGraph.svelte';
+	import ZSectorAllocation from '$lib/components/main/widgets/ZSectorAllocation.svelte';
 
 </script>
 
-<section class="grid small-grid gap-6 text-white text-lg px-12 py-4 min-h-screen min-w-0">
+<section class="relative grid small-grid gap-6 text-white text-lg px-12 py-4 min-h-screen min-w-0">
 	{#each $currentDashboard.widgetList as widget (widget.id)}
 		{#if widget.name == 'accounts-paired'}
 			<Accounts />
@@ -80,6 +82,10 @@
 			<SquareGraph />
 		{:else if widget.name == 'wide-graph'}
 			<WideGraph />
+		{:else if widget.name == 'square-graph-anim'}
+			<ZSquareGraph/>
+		{:else if widget.name == 'sector-allocation-anim'}
+			<ZSectorAllocation/>
 		{/if}
 	{/each}
 </section>

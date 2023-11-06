@@ -27,6 +27,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"chart.js": "^4.4.0",
 		"pocketbase": "^0.18.2"
 	}
 }

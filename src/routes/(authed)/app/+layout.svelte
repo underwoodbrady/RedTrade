@@ -131,13 +131,57 @@
 		]
 	};
 
+	let versionOneDashboard: dashboard = {
+		name: "V1 Mimic",
+		widgetList: [
+		{name:'clock', id:60},
+		{name:'portfolio-summary', id:61},
+		{name:'list-of-stocks', id:63},
+		{name:'recent-trades', id:62},
+		{name:'square-graph', id:64},
+		{name:'relevant-news', id:65},
+		]
+	}
+	
+	let versionTwoDashboard: dashboard = {
+		name: "V2 Mimic",
+		widgetList: [
+			{name:'relevant-news', id:70},
+			{name:'sector-allocation', id:71},
+			{name:'square-graph', id:72},
+			{name:'portfolio-summary', id:73},
+			{name:'single-stock', params: {
+					symbol: 'AMC',
+					tradePrice: '5.56',
+					highPrice: '6.51',
+					lowPrice: '4.90',
+					openPrice: '6.51',
+					closePrice: '5.56',
+					last24HourChange: '-3.6'
+				},id:75},
+		]
+	}
+
+	
+	let graphicTesting: dashboard = {
+		name: "Graphics Testing",
+		widgetList: [
+			{name:'square-graph', id:80},
+			{name:'sector-allocation', id:81},
+			{name:'sector-allocation-anim', id:82},
+			{name:'square-graph-anim', id:83},
+
+			
+		]
+	}
+
 	let dashboards: dashboard[];
 	let notLoggedIn: boolean = false;
 
 	onMount(() => {
 		if ($currentUser != null) {
-			dashboards = [dayTradingDashboard, shortTermDashboard, longTermDashboard, testingDashboard];
-			currentDashboard.set(dashboards[0]);
+			dashboards = [dayTradingDashboard, shortTermDashboard, longTermDashboard, testingDashboard, versionOneDashboard, versionTwoDashboard, graphicTesting];
+			currentDashboard.set(dashboards[6]);
 		} else {
 			notLoggedIn = true;
 		}

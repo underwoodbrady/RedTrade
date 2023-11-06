@@ -4,7 +4,7 @@ export type pages = 'app' | 'settings' | 'community';
 
 /** Should not be needed once its a real site */
 
-export type widgetTypes = 'clock' | 'relevant-news' | 'sector-allocation' | 'single-stock' | 'single-stock-additional' | 'single-stock-allin' | 'square-graph' | 'list-of-stocks' | 'portfolio-summary' | 'wide-graph' | 'accounts-paired' | 'asset-mix' | 'primary-asset-list' | 'budgeting' | 'cash-flow' | 'credit-tracking' | 'financial-analysis' | 'goal-planning' | 'market-movers' | 'loan-payments' | 'multi-small-graphs' | 'net-worth' | 'recent-activity' | 'recent-trades' | 'retirement';
+export type widgetTypes = 'clock' | 'relevant-news' | 'sector-allocation' | 'single-stock' | 'single-stock-additional' | 'single-stock-allin' | 'square-graph' | 'list-of-stocks' | 'portfolio-summary' | 'wide-graph' | 'accounts-paired' | 'asset-mix' | 'primary-asset-list' | 'budgeting' | 'cash-flow' | 'credit-tracking' | 'financial-analysis' | 'goal-planning' | 'market-movers' | 'loan-payments' | 'multi-small-graphs' | 'net-worth' | 'recent-activity' | 'recent-trades' | 'retirement' | 'square-graph-anim' | 'sector-allocation-anim' ;
 
 export type widget = {
     name: widgetTypes,

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import WidgetSquare from '../WidgetSquare.svelte';
 
 	let activity = [
@@ -36,11 +37,11 @@
 			accountOwner: 'Fidelity',
 			amount: 503,
 			date: '10/23'
-		},
+		}
 	];
 </script>
 
-<WidgetSquare>
+<WidgetSquare >
 	<div class="absolute right-7 top-7">
 		<img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-4" />
 	</div>
@@ -69,13 +70,17 @@
 						<td colspan="2">
 							<div class="flex items-center justify-between">
 								<p
-									class='text-[10px] leading-3 py-1 px-2 text-center w-11 rounded-md bg-emerald-400 font-extrabold text-[#303030]'
+									class="text-[10px] leading-3 py-1 px-2 text-center w-11 rounded-md bg-emerald-400 font-extrabold text-[#303030]"
 								>
 									{activity.type.toUpperCase()}
 								</p>
 								{#if activity.accountOwner}
-								 <img src={`/${activity.accountOwner.replace(/ /g, '')}.svg`} class="w-12" alt="Capital One Logo"/>
-								 {/if}
+									<img
+										src={`/${activity.accountOwner.replace(/ /g, '')}.svg`}
+										class="w-12"
+										alt="Capital One Logo"
+									/>
+								{/if}
 							</div>
 						</td>
 					</tr>
