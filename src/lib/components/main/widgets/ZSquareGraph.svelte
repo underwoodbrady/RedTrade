@@ -95,7 +95,7 @@
 							tension: 0.2,
 							pointStyle: 'circle',
 							pointBackgroundColor: 'rgb(74, 222, 128)',
-							pointRadius: 2
+							pointRadius: 1
 						}
 					]
 				}

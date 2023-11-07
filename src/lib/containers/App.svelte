@@ -80,7 +80,7 @@
 		{:else if widget.name == 'single-stock-allin'}
 			<XStockAllInOne {...widget.params} />
 		{:else if widget.name == 'square-graph'}
-			<SquareGraph />
+			<ZSquareGraph />
 		{:else if widget.name == 'wide-graph'}
 			<WideGraph />
 		{:else if widget.name == 'square-graph-anim'}

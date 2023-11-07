@@ -10,7 +10,7 @@
 	let sectorAllocationAmount: string = sectorAllocationDefault;
 
 	const data = {
-		labels: ['House+Auto', 'Misc', 'Consumer'],
+		labels: ['Home+Auto', 'Misc', 'Consumer'],
 		datasets: [
 			{
 				data: [1671.16, 557.05, 974.84],
@@ -87,15 +87,15 @@
 	<div class="text-sm text-neutral-200 flex justify-around mb-2">
 		<div class="flex items-center space-x-1">
 			<div class="w-2 h-2 bg-indigo-500 rounded-full mt-[2px]" />
-			<p>Consumer</p>
+			<p class={sectorAllocationLabel == 'Consumer' ? 'font-semibold' : ''}>Consumer</p>
 		</div>
 		<div class="flex items-center space-x-1">
 			<div class="w-2 h-2 bg-emerald-500 rounded-full mt-[2px]" />
-			<p>House+Auto</p>
+			<p class={sectorAllocationLabel == 'Home+Auto' ? 'font-semibold' : ''}>Home+Auto</p>
 		</div>
 		<div class="flex items-center space-x-1">
 			<div class="w-2 h-2 bg-pink-500 rounded-full mt-[2px]" />
-			<p>Misc</p>
+			<p class={sectorAllocationLabel == 'Misc' ? 'font-semibold' : ''}>Misc</p>
 		</div>
 	</div>
 </WidgetSquare>
