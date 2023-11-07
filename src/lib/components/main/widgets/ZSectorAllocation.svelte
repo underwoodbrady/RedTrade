@@ -68,7 +68,7 @@
 		<img src="/hamburger-menu.svg" alt="Grab and drop hamburger" class="w-4" />
 	</div>
 	<div class="flex items-center">
-		<h4 class="font-semibold text-neutral-200">~ Sector Allocation ~</h4>
+		<h4 class="font-semibold text-neutral-200">Sector Allocation</h4>
 	</div>
 	<div class="my-auto mx-auto w-44 h-44 relative">
 		<div

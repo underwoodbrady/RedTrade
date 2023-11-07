@@ -72,7 +72,7 @@
 		{:else if widget.name == 'retirement'}
 			<span />
 		{:else if widget.name == 'sector-allocation'}
-			<SectorAllocation />
+			<ZSectorAllocation />
 		{:else if widget.name == 'single-stock'}
 			<SingleStock {...widget.params} />
 		{:else if widget.name == 'single-stock-additional'}
