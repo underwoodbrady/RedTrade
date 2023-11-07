@@ -170,6 +170,7 @@
 			{name:'sector-allocation', id:81},
 			{name:'sector-allocation-anim', id:82},
 			{name:'square-graph-anim', id:83},
+			{name:'wide-graph-anim', id:84},
 
 			
 		]

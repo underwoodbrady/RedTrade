@@ -27,6 +27,7 @@
 	import XBudgeting from '$lib/components/main/widgets/XBudgeting.svelte';
 	import ZSquareGraph from '$lib/components/main/widgets/ZSquareGraph.svelte';
 	import ZSectorAllocation from '$lib/components/main/widgets/ZSectorAllocation.svelte';
+	import ZWideGraph from '$lib/components/main/widgets/ZWideGraph.svelte';
 
 </script>
 
@@ -86,6 +87,8 @@
 			<ZSquareGraph/>
 		{:else if widget.name == 'sector-allocation-anim'}
 			<ZSectorAllocation/>
+		{:else if widget.name == 'wide-graph-anim'}
+			<ZWideGraph/>
 		{/if}
 	{/each}
 </section>
