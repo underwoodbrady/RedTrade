@@ -4,7 +4,7 @@
 </script>
 
 <section
-		class="h-screen bg-[#303030] w-20 drop-shadow-md flex items-center py-8 flex-col fixed left-0 top-0 z-40"
+		class="h-screen bg-[#303030] w-[72px] drop-shadow-md flex items-center py-8 flex-col fixed left-0 top-0 z-40"
 	>
 		<img src="/temp-logo-condensed.svg" alt="Temporary Shortened Logo" class="w-11 mb-12" />
 		<!--SIDEBAR-->

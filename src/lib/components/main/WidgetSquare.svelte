@@ -2,7 +2,10 @@
 	import { onMount } from "svelte";
 
 	let module: HTMLDivElement;
-	let gridResolution = 1;
+	let gridResolution = 4;
+
+	let gridYPadding = 84,
+		gridXPadding = 80;
 
 	function dragElement(elmnt: any) {
 		var pos1 = 0,
@@ -39,16 +42,17 @@
 		}
 
 		function closeDragElement() {
+			console.log(pos1, pos2, pos3, pos4)
 			//hide grid lines
 			//gridLines.style.opacity = 0;
-			elmnt.style.position = 'relative';
+			//elmnt.style.position = 'relative';
 			elmnt.style.opacity = '1';
 			elmnt.style.transform = 'scale(1)';
 			elmnt.style.zIndex = '1';
 			elmnt.style.top =
-				Math.round((elmnt.offsetTop - pos2) / gridResolution) * gridResolution + 'px';
+				Math.round((elmnt.offsetTop - pos2 - gridYPadding) / gridResolution) * gridResolution +gridYPadding + 'px';
 			elmnt.style.left =
-				Math.round((elmnt.offsetLeft - pos1) / gridResolution) * gridResolution + 'px';
+				Math.round((elmnt.offsetLeft - pos1 - gridXPadding) / gridResolution) * gridResolution +gridXPadding + 'px';
 			// stop moving when mouse button is released:
 			document.onmouseup = null;
 			document.onmousemove = null;
@@ -56,7 +60,7 @@
 	}
 
 	onMount(()=>{
-		//dragElement(module)
+		dragElement(module)
 	});
 </script>
 

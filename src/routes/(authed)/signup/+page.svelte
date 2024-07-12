@@ -123,17 +123,11 @@
 				Click the link that was sent to <span class="text-sm text-neutral-200">{verifyEmail}</span>
 			</p>
 			<div class="w-full flex justify-center">
-				<a href="/signup" class="text-brand underline">Resend Email</a>
+				<a href="/signup" class="text-brand underline font-semibold text-sm">Resend Email</a>
 			</div>
 		{:else if signUpStage == 'personal-information'}
-			<div class="w-full flex justify-center mb-5 -mt-2">
-				<div class="flex items-center space-x-2">
-					<div class="w-2 h-2 rounded-full bg-brand" />
-					<div class="w-2 h-2 rounded-full bg-neutral-800" />
-					<div class="w-2 h-2 rounded-full bg-neutral-800" />
-				</div>
-			</div>
-			<h2 class="sm:mt-0 text-2xl sm:text-3xl font-semibold text-center mb-8">
+
+			<h2 class="sm:mt-0 text-2xl sm:text-3xl font-semibold text-center mb-8 mt-2">
 				Account Information
 			</h2>
 

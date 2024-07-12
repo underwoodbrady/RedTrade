@@ -170,9 +170,16 @@
 			{name:'sector-allocation', id:81},
 			{name:'sector-allocation-anim', id:82},
 			{name:'square-graph-anim', id:83},
-			{name:'wide-graph-anim', id:84},
+			{name:'wide-graph-anim', id:84},	
+		]
+	}
 
-			
+	let movementTesting: dashboard = {
+		name: "Move Testing",
+		widgetList: [
+			{name:'square-graph', id:90},
+			{name:'sector-allocation', id:91},
+			{name:'recent-trades', id:82},
 		]
 	}
 
@@ -181,7 +188,7 @@
 
 	onMount(() => {
 		if ($currentUser != null) {
-			dashboards = [dayTradingDashboard, shortTermDashboard, longTermDashboard, testingDashboard, versionOneDashboard, versionTwoDashboard, graphicTesting];
+			dashboards = [dayTradingDashboard, shortTermDashboard, longTermDashboard, testingDashboard, versionOneDashboard, versionTwoDashboard, graphicTesting, movementTesting];
 			currentDashboard.set(dashboards[6]);
 		} else {
 			notLoggedIn = true;

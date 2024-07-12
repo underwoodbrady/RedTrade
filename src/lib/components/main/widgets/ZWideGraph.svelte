@@ -11,12 +11,14 @@
 	Chart.defaults.font.weight = '400';
 	Chart.defaults.font.family = 'ui-sans-serif, system-ui';
 
-
 	onMount(() => {
 		const ctx = canvas.getContext('2d');
 		const gradient = ctx.createLinearGradient(0, 0, 0, 160);
-		gradient.addColorStop(0, 'rgba(244, 63, 94, 0.4)');   
+		gradient.addColorStop(0, 'rgba(244, 63, 94, 0.4)');
 		gradient.addColorStop(1, 'rgba(244, 63, 94, 0)');
+		const gradient2 = ctx.createLinearGradient(0, 0, 0, 160);
+		gradient2.addColorStop(0, 'rgba(94, 63, 244, 0.4)');
+		gradient2.addColorStop(1, 'rgba(94, 63, 244, 0)');
 		(async function () {
 			const data = [
 				{ year: 2010, count: 10 },
@@ -56,13 +58,14 @@
 						{
 							data: data.map((row) => row.count),
 							fill: {
-								target: 'origin',
+								target:'origin',
 								above: gradient, // Area will be red above the origin
 							},
 							borderColor: 'rgb(244, 63, 94)',
 							tension: 0.2,
 							pointHoverBorderWidth: 2,
 							pointHoverRadius: 4,
+							stepped: true
 						}
 					]
 				}
