@@ -31,6 +31,8 @@
 	<div class="w-full max-w-6xl">
 		<p class="text-neutral-400/80 uppercase font-semibold text-sm text-center">Integrates With:</p>
 		<div class="flex items-center justify-around w-full -mt-2">
+			<h3 class="text-2xl text-center uppercase">REDACTED</h3>
+			<!--
 			<div class="relative">
 				<img src="/TDAmeritrade.svg" alt="TD Ameritrade" class="w-52 -mr-4" />
 			</div>
@@ -52,6 +54,7 @@
 				<img src="/Vanguard.svg" alt="Vanguard" class="h-6 mt-5 mx-8" />
 				<p class="font-bold absolute text-neutral-400 right-2 top-0">*</p>
 			</div>
+			-->
 		</div>
 		<p class="text-sm font-semibold text-right text-neutral-400">* Coming soon</p>
 	</div>
